@@ -1,0 +1,6 @@
+task/
+*.psd
+*.pdf
+node_modules/
+dist/
+.publish/
