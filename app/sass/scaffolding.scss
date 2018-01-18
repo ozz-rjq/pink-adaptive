@@ -1,6 +1,10 @@
 body{
 	width: 320px;
 	margin: 0 auto;
+
+	font-family: $open-sans;
+	font-size: 14px;
+	line-height: 30px;
 }
 
 @media (min-width: $tablet-width){
