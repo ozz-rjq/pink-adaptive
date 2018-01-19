@@ -1,12 +1,10 @@
 
 .page-header{
-	min-height: 325px;
-	background-color: rgba(255,0,0,0.3);
+
 }
 
 @media (min-width: $tablet-width){
 	.page-header{
-		min-height: 360px;
 	}
 }
 
