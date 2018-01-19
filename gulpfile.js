@@ -17,6 +17,7 @@ gulp.task("clean", function() {
 
 gulp.task("style", function() {
 	gulp.src("app/sass/style.scss")
+		.pipe(plumber())
 		.pipe(sass())
 		.pipe(
 			autoprefixer(
