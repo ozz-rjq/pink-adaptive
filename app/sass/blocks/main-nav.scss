@@ -32,6 +32,9 @@
 	}
 }
 
+.main-nav__logo{
+	margin-top: 22px;
+}
 
 .main-nav__toggle{
 	position: absolute;
@@ -183,16 +186,23 @@
 	.main-nav{
 	}
 
+	.main-nav__logo{
+		margin-top: 27px;
+	}
+
 	.main-nav__header{
 		min-height: 110px;
 		padding: 0 20px;
+	}
+
+	.main-nav__toggle{
+		top: 45px;
 	}
 }
 
 
 @media (min-width: $desktop-width){
 	.main-nav{
-		min-height: 110px;
 		width: 960px;
 		padding: 0 10px;
 
@@ -204,6 +214,7 @@
 	}
 
 	.main-nav__header{
+		min-height: 0;
 		min-width: 320px;
 		background-color: transparent;
 	}
@@ -223,6 +234,29 @@
 	}
 
 	.main-nav__item{
+		margin-right: 75px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+
+	.main-nav__link{
+		padding: 0;
+		margin-top: 46px;
+		margin-bottom: 46px;
+
+		font-size: 18px;
+		line-height: 18px;
+		font-weight: 400;
+		text-transform: capitalize;
+		text-decoration: none;
+
 		background-color: transparent;
+		box-shadow: none;
+
+		&::after{
+			display: none;
+		}
 	}
 }

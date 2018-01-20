@@ -419,7 +419,8 @@ body {
 
 @media (min-width: 1200px) {
   .page-header {
-    min-height: 110px;
+    position: relative;
+    z-index: 10;
     background-color: rgba(0, 0, 0, 0.3); } }
 
 .main-nav {
@@ -452,6 +453,9 @@ body {
       width: 100%;
       height: 1px;
       background-color: #000; }
+
+.main-nav__logo {
+  margin-top: 22px; }
 
 .main-nav__toggle {
   position: absolute;
@@ -546,13 +550,16 @@ body {
     color: rgba(210, 40, 86, 0.3); }
 
 @media (min-width: 660px) {
+  .main-nav__logo {
+    margin-top: 27px; }
   .main-nav__header {
     min-height: 110px;
-    padding: 0 20px; } }
+    padding: 0 20px; }
+  .main-nav__toggle {
+    top: 45px; } }
 
 @media (min-width: 1200px) {
   .main-nav {
-    min-height: 110px;
     width: 960px;
     padding: 0 10px;
     margin: 0 auto;
@@ -562,6 +569,7 @@ body {
     display: flex;
     background-color: transparent; }
   .main-nav__header {
+    min-height: 0;
     min-width: 320px;
     background-color: transparent; }
   .main-nav__logo {
@@ -579,10 +587,40 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .main-nav__item {
-    background-color: transparent; } }
+    margin-right: 75px; }
+    .main-nav__item:last-child {
+      margin-right: 0; }
+  .main-nav__link {
+    padding: 0;
+    margin-top: 46px;
+    margin-bottom: 46px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+    .main-nav__link::after {
+      display: none; } }
 
 .promo {
-  background-image: url("../img/test.jpg");
-  background-repeat: no-repeat;
-  padding-top: 100px;
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0px 176px, center top;
   margin-top: -66px; }
+
+.promo__wrapper {
+  padding-top: 490px; }
+
+@media (min-width: 660px) {
+  .promo {
+    margin-top: -110px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: center top; } }
+
+@media (min-width: 1200px) {
+  .promo {
+    margin-top: -110px;
+    background-image: url("../img/bg-back-desktop@1x.jpg"); } }
