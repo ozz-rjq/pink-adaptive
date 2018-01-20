@@ -1,6 +1,19 @@
 .promo{
+	width: 100%;
+	margin: 0 auto;
+
+	background-color: #1d2631;
+	background-image:	url("../img/bg-back-mobile@1x.jpg");
+	background-repeat: no-repeat, no-repeat;
+	background-position: center top;
+
+	margin-top: -66px;
+}
+
+.promo__container{
 	width: 320px;
 	margin: 0 auto;
+
 
 	background-image: url("../img/iphone-hand-mobile@1x.png"),
 										url("../img/bg-back-mobile@1x.jpg");
@@ -21,15 +34,15 @@
 }
 
 .promo__link{
-	margin-top: 28px;
+	margin-top: 25px;
 	margin-left: 20px;
 }
 
 .promo__platforms{
 	width: 205px;
 	margin: 0 auto;
-	margin-top: 32px;
-	margin-bottom: 21px;
+	margin-top: 30px;
+	margin-bottom: 20px;
 
 	display: flex;
 	align-items: center;
@@ -51,7 +64,7 @@
 .promo__desc{
 	width: 240px;
 	margin: 0 auto;
-	padding-bottom: 30px;
+	padding-bottom: 28px;
 
 	font-family: $open-sans;
 	font-size: 14px;
@@ -63,6 +76,16 @@
 
 @media (min-width: $tablet-width){
 	.promo{
+		width: 100%;
+		margin: 0 auto;
+		margin-top: -110px;
+		//padding-top: 200px;
+
+		background-image: url("../img/bg-back-tablet@1x.jpg");
+		background-position:center top;
+	}
+
+	.promo__container{
 		width: $tablet-width;
 		margin: 0 auto;
 		margin-top: -110px;
@@ -115,6 +138,17 @@
 
 @media (min-width: $desktop-width){
 	.promo{
+		width: 100%;
+		margin: 0 auto;
+		margin-top: -110px;		
+
+
+		background-image: url("../img/bg-back-desktop@1x.jpg");
+
+		background-position: center top;
+	}
+
+	.promo__container{
 		width: $desktop-width;
 		margin: 0 auto;
 		margin-top: -110px;		

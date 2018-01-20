@@ -416,19 +416,28 @@ body {
   clip: rect(1px, 1px, 1px, 1px); }
 
 .page-header {
-  width: 320px;
-  margin: 0 auto; }
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.page-header__wrapper {
+  width: 320px; }
 
 @media (min-width: 660px) {
   .page-header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3); }
+  .page-header__wapper {
     width: 660px; } }
 
 @media (min-width: 1200px) {
   .page-header {
     width: 100%;
     position: relative;
-    z-index: 10;
-    background-color: rgba(0, 0, 0, 0.3); } }
+    z-index: 10; }
+  .page-header__wrapper {
+    width: 960px;
+    margin: 0 auto; } }
 
 .main-nav {
   width: 100%; }
@@ -574,13 +583,15 @@ body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     background-color: transparent; }
   .main-nav__header {
     min-height: 0;
-    min-width: 320px;
+    width: auto;
     background-color: transparent; }
-  .main-nav__logo {
-    width: 150px; }
   .main-nav__toggle {
     display: none; }
   .main-nav__list {
@@ -615,6 +626,15 @@ body {
       color: rgba(255, 255, 255, 0.3); } }
 
 .promo {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #1d2631;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top;
+  margin-top: -66px; }
+
+.promo__container {
   width: 320px;
   margin: 0 auto;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
@@ -630,14 +650,14 @@ body {
   display: none; }
 
 .promo__link {
-  margin-top: 28px;
+  margin-top: 25px;
   margin-left: 20px; }
 
 .promo__platforms {
   width: 205px;
   margin: 0 auto;
-  margin-top: 32px;
-  margin-bottom: 21px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -660,7 +680,7 @@ body {
 .promo__desc {
   width: 240px;
   margin: 0 auto;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -670,6 +690,12 @@ body {
 
 @media (min-width: 660px) {
   .promo {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -110px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: center top; }
+  .promo__container {
     width: 660px;
     margin: 0 auto;
     margin-top: -110px;
@@ -704,6 +730,12 @@ body {
 
 @media (min-width: 1200px) {
   .promo {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -110px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: center top; }
+  .promo__container {
     width: 1200px;
     margin: 0 auto;
     margin-top: -110px;
@@ -748,3 +780,24 @@ body {
     background-color: #fff; }
   .download-btn:active {
     color: rgba(210, 40, 86, 0.3); }
+
+.offers {
+  width: 100%; }
+
+.offers__wrapper {
+  width: 320px;
+  margin: 0 auto; }
+
+@media (min-width: 660px) {
+  .offers {
+    width: 100%; }
+  .offers__wrapper {
+    width: 660px;
+    margin: 0 auto; } }
+
+@media (min-width: 1200px) {
+  .offers {
+    width: 100%; }
+  .offers__wrapper {
+    width: 1200px;
+    margin: 0 auto; } }
