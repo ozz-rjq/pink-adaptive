@@ -1,0 +1,18 @@
+.download-btn{
+	display: inline-block;
+	//box-sizing: border-box;
+	padding-top: 15px;
+	padding-bottom: 16px;
+	padding-left: 36px;
+	padding-right: 36px;
+
+	font-family: $open-sans;
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 700;
+	text-decoration: none;
+	color: #fff;
+
+	border: 3px solid #fff;
+	border-radius: 35px;
+}
