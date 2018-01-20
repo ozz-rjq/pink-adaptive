@@ -22,13 +22,89 @@
 	margin-left: 20px;
 }
 
+.promo__platforms{
+	width: 205px;
+	margin: 0 auto;
+	margin-top: 32px;
+	margin-bottom: 21px;
+
+	display: flex;
+	align-items: center;
+
+	justify-content: space-between;
+}
+
+.promo__platform{
+
+	&:hover{
+		opacity: 0.6;
+	}
+
+	&:active{
+		opacity: 0.4;
+	}
+}
+
+.promo__desc{
+	width: 240px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+
+	font-family: $open-sans;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 300;
+	color: #fff;
+	text-align: center;
+}
+
 @media (min-width: $tablet-width){
 	.promo{
 		margin-top: -110px;
+		padding-top: 200px;
 
 		background-image: url("../img/iphone-hand-tablet@1x.png"),
 											url("../img/bg-back-tablet@1x.jpg");
-		background-position: 0px bottom, center top;
+		background-position: -20px bottom, center top;
+	}
+
+	.promo__wrapper{
+		width: 300px;
+		margin-left: 20px;
+
+		background-color: transparent;
+	}
+
+	.promo__title{
+		display: block;
+		width: 200px;
+		margin: 0 auto;
+
+		font-family: $open-sans;
+		font-size: 40px;
+		line-height: 48px;
+		font-weight: 300;
+		text-align: center;
+		color: #fff;
+	}
+
+	.promo__link{
+		width: 300px;
+		margin-top: 26px;
+		
+		margin-left: 0;
+	}
+
+	.promo__platforms{
+		margin-top: 46px;
+		margin-bottom: 32px;
+	}
+
+	.promo__desc{
+		width: 300px;
+		padding-bottom: 110px;
+
+		font-size: 18px;
 	}
 }
 

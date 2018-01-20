@@ -258,5 +258,9 @@
 		&::after{
 			display: none;
 		}
+
+		&:active{
+			color: rgba(#fff, 0.3);
+		}
 	}
 }
