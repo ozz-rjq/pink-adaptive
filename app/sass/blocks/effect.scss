@@ -90,5 +90,70 @@
 		&:hover{
 			text-decoration: none;
 		}
+
+		&:active{
+			opacity: 0.6;
+		}
+	}
+}
+
+@media(min-width: $desktop-width){
+	.effect{
+		background-color: #f2f2f2;
+	}
+
+	.effect__wrapper{
+		width: 940px;
+	}
+
+	.effect__col{
+		width: 572px;
+
+		&--narrow{
+			width: 368px;
+		}
+	}
+
+	.effect__timer{
+		width: 253px;
+		height: 253px;
+		margin-top: 105px;
+
+		font-size: 120px;
+		line-height: 225px;
+
+		border-width: 16px;
+
+		&::after{
+			top: -113px;
+			left: -61px;
+
+			width: 343px;
+			height: 394px;
+
+			background-size: 343px 394px;
+		}
+	}
+
+	.effect__title{
+		width: 100%;
+
+		margin-top: 95px;
+		margin-bottom: 25px;
+	}
+
+	.effect__desc{
+		width: 100%;
+		margin-bottom: 30px;
+
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+	.effect__link{
+		margin-bottom: 112px;
+
+		font-size: 18px;
+		line-height: 30px;
 	}
 }
