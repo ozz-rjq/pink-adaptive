@@ -1,0 +1,94 @@
+.effect{
+	display: none;
+}
+
+@media (min-width: $tablet-width){
+	.effect{
+		display: block;
+		background-color: #fff;
+	}
+
+	.effect__wrapper{
+		width: $tablet-width - 40px;
+		margin: 0 auto;
+
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.effect__col{
+		width: 310px;
+
+		&--narrow{
+			width: 300px;
+		}
+	}
+
+	.effect__timer{
+		position: relative;
+
+		display: block;
+		box-sizing: border-box;
+
+		margin-top: 98px;
+		width: 202px;
+		height: 202px;
+
+		font-size: 96px;
+		line-height: 176px;
+		font-weight: 700;
+		color: $pink;
+		text-align: center;
+
+		border: 13px solid $pink;
+		border-radius: 50%;
+
+		&::after{
+			content: "";
+			position: absolute;
+			top: -92px;
+			left: -50px;
+
+			width: 280px;
+			height: 350px;
+
+			background-image: url("../../img/icon-timer.svg");
+			background-size: 276px 316px;
+			background-repeat: no-repeat;
+		}
+	}
+
+	.effect__title{
+		width: 180px;
+		margin-top: 98px;
+		margin-bottom: 8px;
+
+		font-size: 30px;
+		line-height: 36px;
+	}
+
+	.effect__desc{
+		width: 300px;
+		margin-top: 0;
+		margin-bottom: 10px;
+
+		font-size: 14px;
+		line-height: 24px;
+		color: #283645;
+	}
+
+	.effect__link{
+		display: inline-block;
+		vertical-align: top;
+
+		margin-bottom: 26px;
+
+		font-size: 14px;
+		line-height: 24px;
+		color: $pink;
+
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}

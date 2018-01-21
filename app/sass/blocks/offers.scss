@@ -110,6 +110,10 @@
 	.offers__item{
 		padding-bottom: 36px;
 		margin-bottom: 0;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
 	}
 
 	.offers__title{
