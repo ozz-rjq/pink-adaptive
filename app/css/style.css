@@ -842,7 +842,9 @@ body {
     background: -o-linear-gradient(95deg, #f2f2f2 0%, #f2f2f2 62%, #fff 62%);
     background: linear-gradient(-5deg, #f2f2f2 0%, #f2f2f2 62%, #fff 62%); }
   .offers__wrapper {
-    width: 660px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 620px;
     margin: 0 auto;
     background: url("../img/iphone-screen-1-tablet@1x.png");
     background-repeat: no-repeat;
@@ -871,7 +873,57 @@ body {
 
 @media (min-width: 1200px) {
   .offers {
-    width: 100%; }
+    width: 100%;
+    background: -webkit-linear-gradient(94deg, #f2f2f2 0%, #f2f2f2 59%, #fff 59%);
+    background: -o-linear-gradient(94deg, #f2f2f2 0%, #f2f2f2 59%, #fff 59%);
+    background: linear-gradient(-4deg, #f2f2f2 0%, #f2f2f2 59%, #fff 59%); }
   .offers__wrapper {
     width: 1200px;
-    margin: 0 auto; } }
+    margin: 0 auto;
+    background: none; }
+  .offers__header {
+    padding-top: 72px;
+    padding-bottom: 70px; }
+  .offers__head {
+    font-size: 50px;
+    line-height: 60px; }
+    .offers__head--narrow {
+      width: 450px; }
+  .offers__list {
+    width: 940px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .offers__item {
+    width: 300px;
+    padding-top: 358px;
+    padding-bottom: 0;
+    margin-bottom: 67px;
+    background-position: top center; }
+    .offers__item:nth-child(1) {
+      background: url("../img/iphone-screen-1-desktop@1x.png");
+      background-repeat: no-repeat; }
+    .offers__item:nth-child(2) {
+      background: url("../img/iphone-screen-2-desktop@1x.png");
+      background-repeat: no-repeat; }
+    .offers__item:nth-child(3) {
+      background: url("../img/iphone-screen-3-desktop@1x.png");
+      background-repeat: no-repeat; }
+  .offers__title {
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 23px;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center; }
+  .offers__desc {
+    width: 240px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center; } }
