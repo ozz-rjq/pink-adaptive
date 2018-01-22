@@ -995,7 +995,7 @@ body {
   .effect__link {
     display: inline-block;
     vertical-align: top;
-    margin-bottom: 26px;
+    margin-bottom: 27px;
     font-size: 14px;
     line-height: 24px;
     color: #d22856; }
@@ -1059,14 +1059,19 @@ body {
 .reviews__item {
   display: none; }
 
+.reviews__header {
+  margin-bottom: 12px; }
+
 .reviews__author {
   display: block;
-  margin-bottom: 12px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   font-style: normal;
   text-align: center; }
+
+.reviews__profession {
+  display: none; }
 
 .reviews__summary {
   width: 300px;
@@ -1144,3 +1149,69 @@ label[for=reviews-slide-3] {
 
 .reviews__radio {
   display: none; }
+
+@media (min-width: 660px) {
+  .reviews__wrapper {
+    width: 620px;
+    margin: 0 auto; }
+  .reviews__list {
+    padding-top: 100px; }
+  .reviews__header {
+    width: 100%;
+    margin-bottom: 46px;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; }
+  .reviews__author {
+    font-size: 20px;
+    line-height: 30px; }
+  .reviews__profession {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    color: #283645;
+    font-weight: 400;
+    text-align: center; }
+  .reviews__summary {
+    width: 100%;
+    padding-bottom: 35px;
+    font-size: 18px;
+    line-height: 30px;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1; }
+  .reviews__radio--1:checked ~ .reviews__list
+.reviews__item--1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-animation: moveOut 0.4s;
+            animation: moveOut 0.4s; }
+  .reviews__radio--2:checked ~ .reviews__list
+.reviews__item--2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-animation: moveOut 0.4s;
+            animation: moveOut 0.4s; }
+  .reviews__radio--3:checked ~ .reviews__list
+.reviews__item--3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-animation: moveOut 0.4s;
+            animation: moveOut 0.4s; } }
