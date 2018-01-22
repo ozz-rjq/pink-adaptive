@@ -1259,6 +1259,12 @@ label[for=reviews-slide-3] {
       -webkit-transform: rotate(-45deg);
           -ms-transform: rotate(-45deg);
               transform: rotate(-45deg); }
+  .reviews--no-js .reviews__btn {
+    display: none; }
+  .reviews__controls {
+    display: none; }
+  .reviews--no-js .reviews__controls {
+    display: block; }
   .reviews__list {
     padding-top: 186px; }
   .reviews__author {
