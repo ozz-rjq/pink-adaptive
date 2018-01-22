@@ -1056,6 +1056,9 @@ body {
   list-style: none;
   padding-top: 44px; }
 
+.reviews__item {
+  display: none; }
+
 .reviews__author {
   display: block;
   margin-bottom: 12px;
@@ -1082,9 +1085,6 @@ body {
   height: 10px;
   text-align: center; }
 
-.reviews__item {
-  display: none; }
-
 .reviews__control {
   position: relative;
   display: inline-block;
@@ -1096,7 +1096,8 @@ body {
   background-color: #bec2c7;
   border: 2px solid #fff;
   -webkit-border-radius: 50%;
-          border-radius: 50%; }
+          border-radius: 50%;
+  cursor: pointer; }
 
 .reviews__radio--1:checked ~ .reviews__controls
 label[for=reviews-slide-1] {
@@ -1105,7 +1106,9 @@ label[for=reviews-slide-1] {
 
 .reviews__radio--1:checked ~ .reviews__list
 .reviews__item--1 {
-  display: block; }
+  display: block;
+  -webkit-animation: moveOut 0.4s;
+          animation: moveOut 0.4s; }
 
 .reviews__radio--2:checked ~ .reviews__controls
 label[for=reviews-slide-2] {
@@ -1114,7 +1117,9 @@ label[for=reviews-slide-2] {
 
 .reviews__radio--2:checked ~ .reviews__list
 .reviews__item--2 {
-  display: block; }
+  display: block;
+  -webkit-animation: moveOut 0.4s;
+          animation: moveOut 0.4s; }
 
 .reviews__radio--3:checked ~ .reviews__controls
 label[for=reviews-slide-3] {
@@ -1123,7 +1128,19 @@ label[for=reviews-slide-3] {
 
 .reviews__radio--3:checked ~ .reviews__list
 .reviews__item--3 {
-  display: block; }
+  display: block;
+  -webkit-animation: moveOut 0.4s;
+          animation: moveOut 0.4s; }
+
+@-webkit-keyframes moveOut {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5); } }
+
+@keyframes moveOut {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5); } }
 
 .reviews__radio {
   display: none; }
