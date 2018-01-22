@@ -1050,6 +1050,9 @@ body {
   width: 320px;
   margin: 0 auto; }
 
+.reviews__btn {
+  display: none; }
+
 .reviews__list {
   margin: 0;
   padding: 0;
@@ -1103,6 +1106,8 @@ body {
   -webkit-border-radius: 50%;
           border-radius: 50%;
   cursor: pointer; }
+  .reviews__control:hover {
+    background-color: #888f98; }
 
 .reviews__radio--1:checked ~ .reviews__controls
 label[for=reviews-slide-1] {
@@ -1215,3 +1220,48 @@ label[for=reviews-slide-3] {
             flex-wrap: wrap;
     -webkit-animation: moveOut 0.4s;
             animation: moveOut 0.4s; } }
+
+@media (min-width: 1200px) {
+  .reviews {
+    background-image: url("../../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center 72px; }
+  .reviews__wrapper {
+    width: 940px;
+    margin: 0 auto; }
+  .reviews__btn {
+    display: block;
+    position: absolute;
+    top: 50%;
+    border: none;
+    font-size: 0;
+    background-color: transparent;
+    border: solid #bec2c7;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 14px;
+    cursor: pointer; }
+    .reviews__btn:hover {
+      border-color: #7e868f; }
+    .reviews__btn:active {
+      border-color: rgba(126, 134, 143, 0.1); }
+    .reviews__btn:focus {
+      outline: none;
+      border-width: 0 3px 3px 0;
+      border-color: rgba(210, 40, 86, 0.4); }
+    .reviews__btn--prev {
+      left: 0;
+      -webkit-transform: rotate(135deg);
+          -ms-transform: rotate(135deg);
+              transform: rotate(135deg); }
+    .reviews__btn--next {
+      right: 0;
+      -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+  .reviews__list {
+    padding-top: 186px; }
+  .reviews__author {
+    font-size: 24px; }
+  .reviews__summary {
+    width: 700px; } }
