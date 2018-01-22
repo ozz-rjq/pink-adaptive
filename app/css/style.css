@@ -1068,7 +1068,7 @@ body {
 .reviews__summary {
   width: 300px;
   margin: 0 auto;
-  margin-bottom: 32px;
+  padding-bottom: 44px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
@@ -1076,12 +1076,16 @@ body {
 
 .reviews__controls {
   position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
   text-align: center; }
 
-.slider__slide {
+.reviews__item {
   display: none; }
 
-.slider__control {
+.reviews__control {
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -1094,34 +1098,31 @@ body {
   -webkit-border-radius: 50%;
           border-radius: 50%; }
 
-.slider__radio--1:checked ~ .slider__controls
+.reviews__radio--1:checked ~ .reviews__controls
 label[for=reviews-slide-1] {
-  margin-top: 0;
   background-color: #fff;
   border: 2px solid #283645; }
 
-.slider__radio--1:checked ~ .slider__slides
-.slider__slide--1 {
+.reviews__radio--1:checked ~ .reviews__list
+.reviews__item--1 {
   display: block; }
 
-.slider__radio--2:checked ~ .slider__controls
+.reviews__radio--2:checked ~ .reviews__controls
 label[for=reviews-slide-2] {
-  margin-top: 0;
   background-color: #fff;
   border: 2px solid #283645; }
 
-.slider__radio--2:checked ~ .slider__slides
-.slider__slide--2 {
+.reviews__radio--2:checked ~ .reviews__list
+.reviews__item--2 {
   display: block; }
 
-.slider__radio--3:checked ~ .slider__controls
+.reviews__radio--3:checked ~ .reviews__controls
 label[for=reviews-slide-3] {
-  margin-top: 0;
   background-color: #fff;
   border: 2px solid #283645; }
 
-.slider__radio--3:checked ~ .slider__slides
-.slider__slide--3 {
+.reviews__radio--3:checked ~ .reviews__list
+.reviews__item--3 {
   display: block; }
 
 .reviews__radio {
