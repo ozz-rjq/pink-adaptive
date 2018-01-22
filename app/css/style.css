@@ -526,6 +526,9 @@ body {
   .main-nav__toggle:focus {
     outline: 1px solid rgba(255, 255, 255, 0.1); }
 
+.main-nav--no-js .main-nav__toggle {
+  display: none; }
+
 .main-nav__list {
   margin: 0;
   padding: 0;
