@@ -22,12 +22,17 @@
 	transform: translateX(-256px);
 }
 
+.rates__item--aux{
+	display: none;
+}
+
 .rates__header{
 	width: 276px;
 
 	text-align: center;
 
 	background-color: #283645;
+	border-radius: 2px;
 
 	&--bordered{
 		border-right: 2px solid #f2f2f2;
@@ -42,7 +47,6 @@
 	line-height: 30px;
 	font-weight: 700;
 	color: #fff;
-
 }
 
 .rates__price{
@@ -186,6 +190,66 @@
 
 	.rates__wrapper{
 		width: $tablet-width;
+	}
+
+	.rates__controls{
+		display: none;
+	}
+
+	.rates__list{
+		transform: translateX(0px);
+	}
+
+	.rates__item--aux{
+		display: block;
+
+		.rates__header{
+			min-height: 62px;
+			background-color: transparent;
+		}
+
+		.rates__option{
+			border-top: 2px solid #e5e5e5;
+			border-left: 2px solid #e5e5e5;
+			border-right: 2px solid #e5e5e5;
+
+			border-bottom: none;
+		}
+
+		.rates__option--narrow{
+			height: 59px;
+		}
+
+		.rates__option--bottomed{
+			height: 63px;
+			border-bottom: 2px solid #e5e5e5;
+		}
+	}
+
+	.rates__header{
+		width: 156px;
+		padding-top: 10px;
+		padding-bottom: 7px;
+	}
+
+	.rates__title{
+		font-size: 16px;
+	}
+
+	.rates__price{
+		font-size: 18px;
+	}
+
+	.rates__option{
+		text-align: center;
+	}
+
+	.rates__option-has{
+		margin: 0 auto;
+	}
+
+	.rates__option-title{
+		@include visually-hidden;
 	}
 }
 
