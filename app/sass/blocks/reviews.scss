@@ -275,6 +275,12 @@
 
 	.reviews--no-js .reviews__controls{
 		display: block;
+		bottom: -10px;
+	}
+
+	.reviews__header{
+		margin-top: 5px;
+		margin-bottom: 0px;
 	}
 
 	.reviews__list{

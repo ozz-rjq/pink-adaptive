@@ -190,10 +190,24 @@
 			<div class="rates__wrapper">
 				<h2 class="visually-hidden">Тарифы</h2>
 
+				<input class="rates__radio  rates__radio--1" id="rates-slide-1" type="radio" name="rates-slider" value="rates-slide-1">
+
+				<input class="rates__radio  rates__radio--2" id="rates-slide-2" type="radio" name="rates-slider" value="rates-slide-2" checked>
+
+				<input class="rates__radio  rates__radio--3" id="rates-slide-3" type="radio" name="rates-slider" value="rates-slide-3">
+
+				<div class="rates__controls  slider__controls">
+					<label for="rates-slide-1" class="rates__control">База</label>
+					
+					<label for="rates-slide-2" class="rates__control">Стандарт</label>
+
+					<label for="rates-slide-3" class="rates__control">Анлим</label>
+				</div>
+
 				<div class="rates__list">
 					<section class="rates__item">
 						<header class="rates__header">
-							<h3>База</h3>
+							<h3 class="rates__title">База</h3>
 							<b class="rates__price">1,99 USD</b>
 						</header>
 
@@ -222,27 +236,27 @@
 					</section>
 
 					<section class="rates__item">
-						<header class="rates__header">
-							<h3>Стандарт</h3>
+						<header class="rates__header  rates__header--bordered">
+							<h3 class="rates__title">Стандарт</h3>
 							<b class="rates__price">1,99 USD</b>
 						</header>
 
 						<ul class="rates__parameters">
-							<li class="rates__option">
+							<li class="rates__option  rates__option--bordered">
 								<span class="rates__option-title">Розовый фильтр</span>
 								<span class="rates__option-has  rates__options-has--yes">
 									<span class="visually-hidden">Да</span>
 								</span>
 							</li>
 
-							<li class="rates__option  rates__option--hit">
+							<li class="rates__option  rates__option--bordered  rates__option--hit">
 								<span class="rates__option-title">Смайлики</span>
 								<span class="rates__option-has  rates__options-has--yes">
 									<span class="visually-hidden">Да</span>
 								</span>
 							</li>
 
-							<li class="rates__option">
+							<li class="rates__option  rates__option--bordered">
 								<span class="rates__option-title">Комментарии</span>
 								<span class="rates__option-has  rates__options-has--no">
 									<span class="visually-hidden">Нет</span>
@@ -253,26 +267,26 @@
 
 					<section class="rates__item">
 						<header class="rates__header">
-							<h3>Unlim</h3>
+							<h3 class="rates__title">Unlim</h3>
 							<b class="rates__price">9,99 USD</b>
 						</header>
 
 						<ul class="rates__parameters">
-							<li class="rates__option">
+							<li class="rates__option  rates__option--right">
 								<span class="rates__option-title">Розовый фильтр</span>
 								<span class="rates__option-has  rates__options-has--yes">
 									<span class="visually-hidden">Да</span>
 								</span>
 							</li>
 
-							<li class="rates__option  rates__option--hit">
+							<li class="rates__option  rates__option--right  rates__option--hit">
 								<span class="rates__option-title">Смайлики</span>
 								<span class="rates__option-has  rates__options-has--yes">
 									<span class="visually-hidden">Да</span>
 								</span>
 							</li>
 
-							<li class="rates__option">
+							<li class="rates__option  rates__option--right">
 								<span class="rates__option-title">Комментарии</span>
 								<span class="rates__option-has  rates__options-has--yes">
 									<span class="visually-hidden">Да</span>
@@ -280,12 +294,6 @@
 							</li>
 						</ul>
 					</section>
-				</div>
-
-				<div class="rates__controls">
-					<button class="rates__toggle" type="button">База</button>
-					<button class="rates__toggle" type="button">Стандарт</button>
-					<button class="rates__toggle" type="button">Анлим</button>
 				</div>
 			</div>
 		</section>
