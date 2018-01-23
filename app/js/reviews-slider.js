@@ -61,7 +61,6 @@
 		for (var i = 0; i < slides.length; i++){
 			if(slides[i].checked){
 				slideNumber = i;
-				console.log(i);
 			}
 		}
 
