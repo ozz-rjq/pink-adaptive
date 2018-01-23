@@ -22,7 +22,7 @@
 	transform: translateX(-256px);
 }
 
-.rates__item--aux{
+.rates__item--info{
 	display: none;
 }
 
@@ -200,7 +200,7 @@
 		transform: translateX(0px);
 	}
 
-	.rates__item--aux{
+	.rates__item--info{
 		display: block;
 
 		.rates__header{
@@ -250,6 +250,19 @@
 
 	.rates__option-title{
 		@include visually-hidden;
+	}
+
+
+	.rates__radio--1:checked ~ .rates__list{
+		transform: translateX(0px);
+	}
+
+	.rates__radio--2:checked ~ .rates__list{
+		transform: translateX(0px);
+	}
+
+	.rates__radio--3:checked ~ .rates__list{
+		transform: translateX(0px);
 	}
 }
 
