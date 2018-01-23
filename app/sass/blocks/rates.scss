@@ -27,7 +27,11 @@
 }
 
 .rates__header{
+	position: relative;
+
 	width: 276px;
+	padding-top: 17px;
+	padding-bottom: 17px;
 
 	text-align: center;
 
@@ -40,7 +44,27 @@
 	}
 }
 
+
+.rates__header--hit{
+	&::after{
+		content:"";
+		position: absolute;
+		top: 0;
+		left: -2px;
+		z-index: 1;
+
+		width: 73px;
+		height: 73px;
+
+		background-image: url("../img/bg-hit.svg");
+		background-repeat: no-repeat;
+	}
+}
+
 .rates__title{
+	position: relative;
+	z-index: 2;
+
 	margin: 0;
 
 	font-size: 18px;
@@ -50,6 +74,9 @@
 }
 
 .rates__price{
+	position: relative;
+	z-index: 2;
+
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 300;
@@ -198,6 +225,10 @@
 
 	.rates__list{
 		transform: translateX(0px);
+
+		width: 630px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.rates__item--info{
@@ -208,28 +239,48 @@
 			background-color: transparent;
 		}
 
+		.rates__parameters{
+			border: 2px solid #e5e5e5;
+		}
+
 		.rates__option{
-			border-top: 2px solid #e5e5e5;
-			border-left: 2px solid #e5e5e5;
-			border-right: 2px solid #e5e5e5;
-
-			border-bottom: none;
+			padding-left: 16px;
 		}
+	}
 
-		.rates__option--narrow{
-			height: 59px;
-		}
+	.rates__option-title--visible{
+		color: #283645;
+		font-size: 14px;
+		line-height: 30px;
+	}
 
-		.rates__option--bottomed{
-			height: 63px;
-			border-bottom: 2px solid #e5e5e5;
-		}
+	.rates__option--special{
+		height: 59px;
+	}
+
+	.rates__option--usual{
+		border-bottom: none;
+		padding-bottom: 10px;
+		height: 59px;
 	}
 
 	.rates__header{
 		width: 156px;
 		padding-top: 10px;
 		padding-bottom: 7px;
+	}
+
+	.rates__header--hit{
+		&::after{
+			top: 0;
+			left: 0;
+			z-index: 3;
+
+			width: 60px;
+			height: 60px;
+
+			background-image: url("../img/bg-hit-tablet.svg");
+		}
 	}
 
 	.rates__title{
@@ -268,10 +319,63 @@
 
 @media (min-width: $desktop-width){
 	.rates{
-
+		background: linear-gradient(-3deg, #f2f2f2 0%, 
+			#f2f2f2 85%, #fff 85%	);
 	}
 
 	.rates__wrapper{
 		width: $desktop-width;
+	}
+
+	.rates__list{
+		width: 950px;
+	}
+
+	.rates__item--info .rates__option{
+			padding-left: 22px;
+	}
+
+	.rates__option--special{
+		height: 61px;
+	}
+
+	.rates__option--usual{
+		border-bottom: none;
+		padding-bottom: 10px;
+		height: 59px;
+	}
+
+	.rates__option-title--visible{
+		font-size: 18px;
+	}
+
+	.rates__header{
+		width: 235px;
+		padding-top: 17px;
+		padding-bottom: 17px;
+	}
+
+	.rates__header--hit{
+		&::after{
+			content:"";
+			position: absolute;
+			top: 0;
+			left: -2px;
+			z-index: 1;
+
+			width: 73px;
+			height: 73px;
+
+			background-image: url("../img/bg-hit.svg");
+			background-repeat: no-repeat;
+		}
+	}
+
+	.rates__title{
+		font-size: 18px;
+	}
+
+	.rates__price{
+		font-size: 24px;
 	}
 }
