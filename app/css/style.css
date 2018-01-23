@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1329,6 +1330,22 @@ label[for=reviews-slide-3] {
   background-image: url("../img/bg-hit.svg");
   background-repeat: no-repeat; }
 
+.rates__header--hit:before {
+  content: "ХИТ";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+
 .rates__title {
   position: relative;
   z-index: 2;
@@ -1507,6 +1524,10 @@ label[for=rates-slide-3] {
     width: 60px;
     height: 60px;
     background-image: url("../img/bg-hit-tablet.svg"); }
+  .rates__header--hit:before {
+    top: 6px;
+    left: 5px;
+    z-index: 4; }
   .rates__title {
     font-size: 16px; }
   .rates__price {
@@ -1569,6 +1590,10 @@ label[for=rates-slide-3] {
     height: 73px;
     background-image: url("../img/bg-hit.svg");
     background-repeat: no-repeat; }
+  .rates__header--hit:before {
+    top: 10px;
+    left: 10px;
+    z-index: 4; }
   .rates__title {
     font-size: 18px; }
   .rates__price {
