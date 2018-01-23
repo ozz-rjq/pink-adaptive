@@ -43,7 +43,6 @@
 	}
 }
 
-
 .rates__header--hit{
 	&::after{
 		content:"";
@@ -152,8 +151,7 @@
 	}
 }
 
-// SLIDER LOGIC
-
+// MOBILE SLIDER LOGIC
 
 .rates__controls{
 	position: absolute;
@@ -267,30 +265,6 @@
 		}
 	}
 
-	.rates__option{
-		height: auto;
-
-		padding-top: 8px;
-		padding-bottom: 5px;
-		text-align: center;
-	}
-
-	.rates__option-title--visible{
-		color: #283645;
-		font-size: 14px;
-		line-height: 30px;
-	}
-
-	.rates__option--middle{
-		padding-bottom: 7px;
-	}
-
-	.rates__option--usual{
-		border-bottom: none;
-		padding-bottom: 7px;
-		height: auto;
-	}
-
 	.rates__header{
 		width: 156px;
 		padding-top: 10px;
@@ -324,6 +298,30 @@
 		font-size: 18px;
 	}
 
+	.rates__option{
+		height: auto;
+
+		padding-top: 8px;
+		padding-bottom: 5px;
+		text-align: center;
+	}
+
+	.rates__option--middle{
+		padding-bottom: 7px;
+	}
+
+	.rates__option--usual{
+		border-bottom: none;
+		padding-bottom: 7px;
+		height: auto;
+	}
+
+	.rates__option-title--visible{
+		color: #283645;
+		font-size: 14px;
+		line-height: 30px;
+	}
+
 	.rates__option-has{
 		margin: 0 auto;
 	}
@@ -331,7 +329,6 @@
 	.rates__option-title{
 		@include visually-hidden;
 	}
-
 
 	.rates__radio--1:checked ~ .rates__list{
 		transform: translateX(0px);
@@ -360,30 +357,6 @@
 		width: 950px;
 		margin-top: 186px;
 		margin-bottom: 95px;
-	}
-
-	.rates__item--info .rates__option{
-			padding-left: 22px;
-	}
-
-	.rates__option{
-		height: 61px;
-		padding-top: 16px;
-		padding-bottom: 14px;
-	}
-
-	.rates__option--special{
-		height: 61px;
-	}
-
-	.rates__option--usual{
-		border-bottom: none;
-		padding-bottom: 10px;
-		height: 59px;
-	}
-
-	.rates__option-title--visible{
-		font-size: 18px;
 	}
 
 	.rates__header{
@@ -420,5 +393,29 @@
 
 	.rates__price{
 		font-size: 24px;
+	}
+
+	.rates__item--info .rates__option{
+			padding-left: 22px;
+	}
+
+	.rates__option{
+		height: 61px;
+		padding-top: 16px;
+		padding-bottom: 14px;
+	}
+
+	.rates__option--special{
+		height: 61px;
+	}
+
+	.rates__option--usual{
+		border-bottom: none;
+		padding-bottom: 10px;
+		height: 59px;
+	}
+
+	.rates__option-title--visible{
+		font-size: 18px;
 	}
 }
