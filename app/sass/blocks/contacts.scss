@@ -9,7 +9,7 @@
 		position: absolute;
 		bottom: -33px;
 		left: 0;
-		//right: 0;
+		z-index: 5;
 
 		width: 50%;
     height: 33px;
@@ -21,8 +21,8 @@
 		content: "";
 		position: absolute;
 		bottom: -33px;
-		//left: 0;
 		right: 0;
+		z-index: 5;
 
 		width: 50%;
     height: 33px;
@@ -172,14 +172,13 @@
 
 	.contacts__address{
 		order: 2;
-	}
 
-	.contacts__address{
 		width: 300px;
+		margin-top: 14px;
 		padding-bottom: 18px;
 	}
 
 	.contacts__field{
-		margin-bottom: 14px;
+		margin-bottom: 7px;
 	}
 }
