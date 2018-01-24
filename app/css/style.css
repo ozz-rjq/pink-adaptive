@@ -1613,3 +1613,64 @@ label[for=rates-slide-3] {
     height: 59px; }
   .rates__option-title--visible {
     font-size: 18px; } }
+
+.contacts {
+  position: relative;
+  width: 100%;
+  background-color: #fff; }
+  .contacts::before {
+    content: "";
+    position: absolute;
+    bottom: -33px;
+    left: 0;
+    width: 50%;
+    height: 33px;
+    background: -webkit-gradient(linear, right top, left bottom, color-stop(50%, #fff), color-stop(50%, transparent));
+    background: -webkit-linear-gradient(right top, #fff 50%, transparent 50%);
+    background: -o-linear-gradient(right top, #fff 50%, transparent 50%);
+    background: linear-gradient(to left bottom, #fff 50%, transparent 50%); }
+  .contacts::after {
+    content: "";
+    position: absolute;
+    bottom: -33px;
+    right: 0;
+    width: 50%;
+    height: 33px;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, #fff), color-stop(50%, transparent));
+    background: -webkit-linear-gradient(left top, #fff 50%, transparent 50%);
+    background: -o-linear-gradient(left top, #fff 50%, transparent 50%);
+    background: linear-gradient(to right bottom, #fff 50%, transparent 50%); }
+
+.contacts__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 44px; }
+
+.contacts__desc {
+  margin: 0;
+  margin-bottom: 33px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  text-align: center; }
+
+.contacts__phone,
+.contacts__mail {
+  margin-bottom: 24px; }
+
+.contacts__address {
+  padding-bottom: 36px; }
+
+.contacts__field {
+  display: block;
+  text-align: center; }
+  .contacts__field--bold {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #283645; }
+  .contacts__field--pink {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #d22856; }
