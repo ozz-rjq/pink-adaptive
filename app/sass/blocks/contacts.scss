@@ -104,14 +104,19 @@
 	.contacts__row{
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 
 	.contacts__phone,
 	.contacts__mail{
 		width: 300px;
+		margin-bottom: 37px;
 	}
 
 	.contacts__address{
+		width: 100%;
+		margin: 0;
+
 		padding-bottom: 26px;
 	}
 
@@ -147,13 +152,8 @@
 		line-height: 58px;
 	}
 
-	.contacts__info{
-		display: flex;
-		justify-content: space-between;
-	}
-
 	.contacts__row{
-		width: 620px;
+		width: 100%;
 	}
 
 	.contacts__phone,
@@ -162,12 +162,24 @@
 		margin-bottom: 0;
 	}
 
+	.contacts__phone{
+		order: 1;
+	}
+
+	.contacts__mail{
+		order: 3;
+	}
+
+	.contacts__address{
+		order: 2;
+	}
+
 	.contacts__address{
 		width: 300px;
 		padding-bottom: 18px;
 	}
 
 	.contacts__field{
-		margin-bottom: 7px;
+		margin-bottom: 14px;
 	}
 }
