@@ -1838,6 +1838,8 @@ a.contacts__field:active {
 .page-footer {
   width: 100%;
   background-color: #fff; }
+  .page-footer--mobile-hide {
+    display: none; }
 
 .page-footer__wrapper {
   width: 320px;
@@ -1862,3 +1864,30 @@ a.contacts__field:active {
     color: #283645; }
   .page-footer__copyright img {
     vertical-align: middle; }
+
+@media (min-width: 660px) {
+  .page-footer {
+    width: 100%;
+    background-color: #fff; }
+    .page-footer--mobile-hide {
+      display: block; }
+  .page-footer__wrapper {
+    width: 620px;
+    padding-top: 36px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
+
+@media (min-width: 1200px) {
+  .page-footer {
+    width: 100%; }
+  .page-footer__wrapper {
+    width: 940px;
+    padding-top: 70px; }
+  .page-footer__copyright {
+    padding-bottom: 59px; } }
