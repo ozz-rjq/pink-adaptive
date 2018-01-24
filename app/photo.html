@@ -2,29 +2,34 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pink Photo</title>
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body class="inner-page">
 	<header class="page-header">
-		<div class="page-header__wrapper main-nav">
-			<div class="main-nav__header">
+		<div class="page-header__wrapper  main-nav  main-nav--no-js">
+			<div class="main-nav__header  main-nav__header--opened">
 				<a class="main-nav__logo">
-					<img class="main-nav__img" src="img/" alt="Pink Logotype">
+					<img class="main-nav__img" src="img/logo-pink-white-mobile.svg" alt="Pink Logotype">
 				</a>
-				<button class="main-nav__toggle">Открыть меню</button>
+
+				<button class="main-nav__toggle  main-nav__toggle--close">Открыть меню</button>
 			</div>
 			
-			<ul class="main-nav__list">
+			<ul class="main-nav__list  main-nav__list--display">
 				<li class="main-nav__item">
 					<a  class="main-nav__link" href="#">Главная</a>
 				</li>
+
 				<li class="main-nav__item">
 					<a  class="main-nav__link" href="#">Фотографии</a>
 				</li>
+
 				<li class="main-nav__item">
 					<a  class="main-nav__link" href="#">Конкурс</a>
 				</li>
+
 				<li class="main-nav__item">
 					<a  class="main-nav__link" href="#">Академия</a>
 				</li>
@@ -33,16 +38,20 @@
 	</header>
 
 	<main class="page-main">
-		<section class="promo">
-			<div class="promo__wrapper">
-				<h2 class="promo__title">Фотографии пользователей</h2>
+		<section class="photo-promo">
+			<div class="photo-promo__container">
+				<div class="photo-promo__wrapper">
+					<h2 class="photo-promo__title">Фотографии пользователей</h2>
+
+					<div class="photo-promo__info  photo-promo__info--top">
+						Взгляните на фотографии, которые выкладывают пользователи!
+						Видите, как не хватает ваших?
+					</div>
+				</div>
 			</div>
 		</section>
 
-		<div class="photo-info  photo-info--top">
-			Взгляните на фотографии, которые выкладывают пользователи!
-			Видите, как не хватает ваших?
-		</div>
+		
 
 		<div class="panorama">
 			<div class="panorama__img">
@@ -223,29 +232,34 @@
 	</main>
 
 	<footer class="page-footer">
-		<div class="footer__logo">
-			<img class="footer__img" src="" alt="">
-		</div>
+		<div class="page-footer__wrapper">
+			<div class="page-footer__logo">
+				<a><img class="page-footer__img" src="img/logo-pink-blue-mobile.svg" alt="Pink"></a>
+			</div>
 
-		<div class="footer__social social">
-			<ul class="social__list">
-				<li class="social__item">
-					<a class="social__link social__link--twitter" href="#">Мы в твиттере</a>
-				</li>
-				<li class="social__item">
-					<a class="social__link social__link--facebook" href="#">Мы в Facebook!</a>
-				</li>
-				<li class="social__item">
-					<a class="social__link social__link--youtube" href="#">Мы в Youtube!</a>
-				</li>
-			</ul>
-		</div>
+			<div class="page-footer__social social">
+				<ul class="social__list">
+					<li class="social__item">
+						<a class="social__link social__link--twitter" href="#">Мы в твиттере</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link social__link--facebook" href="#">Мы в Facebook!</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link social__link--youtube" href="#">Мы в Youtube!</a>
+					</li>
+				</ul>
+			</div>
 
-		<div class="footer__copyright">
-			Разработано: 
-			<img src="" alt="">
+			<div class="page-footer__copyright">
+				<b>Разработано</b>
+				<img src="img/htmlacademy.svg" alt="Academy" width="54" height="68">
+			</div>
 		</div>
 	</footer>
+
+	<script src="js/no-js.js"></script>
+	<script src="js/script.js"></script>
 
 </body>
 </html>
