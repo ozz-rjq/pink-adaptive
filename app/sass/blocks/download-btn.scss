@@ -18,6 +18,9 @@
 	border: 3px solid #fff;
 	border-radius: 35px;
 
+	transition: background-color 0.4s,
+							color 0.35s;
+
 	&:hover{
 		color: $pink;
 		background-color: #fff;
