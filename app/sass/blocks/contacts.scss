@@ -61,6 +61,7 @@
 	display: block;
 
 	text-align: center;
+	text-decoration: none;
 
 	&--bold{
 		font-size: 18px;
@@ -75,6 +76,16 @@
 		font-weight: 300;
 		color: $pink;
 	}
+}
+
+a.contacts__field:hover{
+	color: #283645;
+	text-decoration: underline;
+}
+
+a.contacts__field:active{
+	opacity: 0.3;
+	text-decoration: none;
 }
 
 @media (min-width: $tablet-width){

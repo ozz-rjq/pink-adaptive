@@ -629,6 +629,46 @@ body {
     .main-nav__link:active {
       color: rgba(255, 255, 255, 0.3); } }
 
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 auto; }
+
+.social__item {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 8px; }
+
+.social__link {
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 51px;
+  height: 51px;
+  font-size: 0;
+  background-color: #fff;
+  border: 3px solid #e9ebec;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-repeat: no-repeat; }
+  .social__link--twitter {
+    background-image: url("../img/logo-icon-twitter.svg");
+    background-position: 14px 16px; }
+  .social__link--facebook {
+    background-image: url("../img/logo-icon-facebook.svg");
+    background-position: 18px 14px; }
+  .social__link--youtube {
+    background-image: url("../img/logo-icon-youtube.svg");
+    background-position: 17px 15px; }
+  .social__link:hover {
+    border-color: #283645; }
+  .social__link:active {
+    opacity: 0.3; }
+
 .promo {
   width: 100%;
   margin: 0 auto;
@@ -1676,7 +1716,8 @@ label[for=rates-slide-3] {
 
 .contacts__field {
   display: block;
-  text-align: center; }
+  text-align: center;
+  text-decoration: none; }
   .contacts__field--bold {
     font-size: 18px;
     line-height: 24px;
@@ -1687,6 +1728,14 @@ label[for=rates-slide-3] {
     line-height: 30px;
     font-weight: 300;
     color: #d22856; }
+
+a.contacts__field:hover {
+  color: #283645;
+  text-decoration: underline; }
+
+a.contacts__field:active {
+  opacity: 0.3;
+  text-decoration: none; }
 
 @media (min-width: 660px) {
   .contacts::before {
@@ -1789,3 +1838,27 @@ label[for=rates-slide-3] {
 .page-footer {
   width: 100%;
   background-color: #fff; }
+
+.page-footer__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 40px; }
+
+.page-footer__logo {
+  margin-bottom: 30px;
+  text-align: center; }
+
+.page-footer__social {
+  margin-bottom: 22px;
+  text-align: center; }
+
+.page-footer__copyright {
+  padding-bottom: 23px;
+  text-align: center; }
+  .page-footer__copyright b {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #283645; }
+  .page-footer__copyright img {
+    vertical-align: middle; }

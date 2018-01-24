@@ -1,5 +1,42 @@
 .page-footer{
 	width: 100%;
-	
+
 	background-color: #fff;
+}
+
+.page-footer__wrapper{
+	width: 320px;
+	margin: 0 auto;
+
+	padding-top: 40px;
+}
+
+.page-footer__logo{
+	margin-bottom: 30px;
+
+	text-align: center;
+}
+
+.page-footer__social{
+	margin-bottom: 22px;
+
+	text-align: center;
+}
+
+.page-footer__copyright{
+	padding-bottom: 23px;
+
+	text-align: center;
+
+	b{
+		font-size: 14px;
+		line-height: 18px;
+		font-weight: 400;
+		color: #283645;
+	}
+
+
+	img{
+		vertical-align:middle
+	}
 }
