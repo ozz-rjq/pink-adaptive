@@ -49,59 +49,6 @@
 	background-color: transparent;
 	border: none;
 
-	&--close{
-
-		&::before,
-		&::after{
-			content: "";
-			position: absolute;
-			top: 10px;
-			left: -3px;
-
-			width: 30px;
-			height: 4px;
-			background-color: #fff;
-		}
-
-		&::before{
-			transform: rotate(45deg);
-		}
-
-		&::after{
-			transform: rotate(-45deg);
-		}
-	}
-
-	&--open{
-		width: 50px;
-		height: 24px;
-
-		box-shadow: inset 0px -4px 0px #fff,
-								inset 0px 4px 0px #fff;
-
-		&::after{
-			content: "";
-			position: absolute;
-			top: 10px;
-			left: 0;
-
-			width: 100%;
-			height: 4px;
-			background-color: #fff;
-		}
-
-
-		&:hover{
-			box-shadow: inset 0px -4px 0px $pink,
-									inset 0px 4px 0px $pink;
-		}
-
-		&:active{
-			box-shadow: inset 0px -4px 0px rgba($pink, 0.3),
-									inset 0px 4px 0px rgba($pink, 0.3);
-		}
-	}
-
 	&:hover{
 		cursor: pointer;
 
@@ -121,6 +68,59 @@
 
 	&:focus{
 		outline: 1px solid rgba(255,255,255,0.1);
+	}
+}
+
+.main-nav__toggle--open{
+	width: 50px;
+	height: 24px;
+
+	box-shadow: inset 0px -4px 0px #fff,
+	inset 0px 4px 0px #fff;
+
+	&::after{
+		content: "";
+		position: absolute;
+		top: 10px;
+		left: 0;
+
+		width: 100%;
+		height: 4px;
+		background-color: #fff;
+	}
+
+
+	&:hover{
+		box-shadow: inset 0px -4px 0px $pink,
+		inset 0px 4px 0px $pink;
+	}
+
+	&:active{
+		box-shadow: inset 0px -4px 0px rgba($pink, 0.3),
+		inset 0px 4px 0px rgba($pink, 0.3);
+	}
+}
+
+.main-nav__toggle--close{
+
+	&::before,
+	&::after{
+		content: "";
+		position: absolute;
+		top: 10px;
+		left: -3px;
+
+		width: 30px;
+		height: 4px;
+		background-color: #fff;
+	}
+
+	&::before{
+		transform: rotate(45deg);
+	}
+
+	&::after{
+		transform: rotate(-45deg);
 	}
 }
 
@@ -182,6 +182,17 @@
 
 	&:active{
 		color: rgba($pink, 0.3);
+	}
+}
+
+.main-nav__link--active{
+	&:hover{
+		cursor: default;
+		color: #fff;
+	}
+
+	&:active{
+		color: #fff;
 	}
 }
 
@@ -265,6 +276,16 @@
 
 		&:active{
 			color: rgba(#fff, 0.3);
+		}
+	}
+
+	.main-nav__link--active{
+		&:hover{
+			cursor: default;
+		}
+
+		&:active{
+			color: #fff;
 		}
 	}
 }
