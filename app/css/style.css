@@ -1874,12 +1874,26 @@ a.contacts__field:active {
   text-align: center; }
 
 .page-footer__social {
-  margin-bottom: 22px;
+  margin-bottom: 39px;
   text-align: center; }
 
 .page-footer__copyright {
-  padding-bottom: 23px;
-  text-align: center; }
+  padding-bottom: 40px;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 130px;
+  margin: 0 auto; }
   .page-footer__copyright b {
     font-size: 14px;
     line-height: 18px;
@@ -1904,7 +1918,9 @@ a.contacts__field:active {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
-            justify-content: space-between; } }
+            justify-content: space-between; }
+  .page-footer__copyright {
+    margin: 0; } }
 
 @media (min-width: 1200px) {
   .page-footer {

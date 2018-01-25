@@ -22,15 +22,22 @@
 }
 
 .page-footer__social{
-	margin-bottom: 22px;
+	margin-bottom: 39px;
 
 	text-align: center;
 }
 
 .page-footer__copyright{
-	padding-bottom: 23px;
+	padding-bottom: 40px;
 
 	text-align: center;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 130px;
+
+	margin: 0 auto;
 
 	b{
 		font-size: 14px;
@@ -62,6 +69,10 @@
 
 		display: flex;
 		justify-content: space-between;
+	}
+
+	.page-footer__copyright{
+		margin: 0;
 	}
 }
 
