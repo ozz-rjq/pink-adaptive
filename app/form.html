@@ -8,24 +8,28 @@
 </head>
 <body>
 	<header class="page-header">
-		<div class="page-header__wrapper main-nav">
-			<div class="main-nav__header">
+		<div class="page-header__wrapper  main-nav  main-nav--no-js">
+			<div class="main-nav__header  main-nav__header--opened">
 				<a class="main-nav__logo">
-					<img class="main-nav__img" src="img/" alt="Pink Logotype">
+					<img class="main-nav__img" src="img/logo-pink-white-mobile.svg" alt="Pink Logotype">
 				</a>
-				<button class="main-nav__toggle">Открыть меню</button>
+
+				<button class="main-nav__toggle  main-nav__toggle--close">Открыть меню</button>
 			</div>
 			
-			<ul class="main-nav__list">
+			<ul class="main-nav__list  main-nav__list--display">
 				<li class="main-nav__item">
-					<a  class="main-nav__link" href="#">Главная</a>
+					<a  class="main-nav__link" href="index.html">Главная</a>
 				</li>
+
 				<li class="main-nav__item">
-					<a  class="main-nav__link" href="#">Фотографии</a>
+					<a  class="main-nav__link" href="photo.html">Фотографии</a>
 				</li>
+
 				<li class="main-nav__item">
 					<a  class="main-nav__link" href="#">Конкурс</a>
 				</li>
+
 				<li class="main-nav__item">
 					<a  class="main-nav__link" href="#">Академия</a>
 				</li>
@@ -34,15 +38,19 @@
 	</header>
 
 	<main class="page-main">
-		<section class="promo">
-			<div class="promo__wrapper">
-				<h2 class="promo__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+		<section class="inner-promo">
+			<div class="inner-promo__container">
+				<h2 class="inner-promo__title  inner-promo__title--wide">Конкурс на самое безбашенное путешествие с Пинк</h2>
+			</div>
+			<div class="inner-promo__content">
+				<div class="inner-promo__desc  inner-promo__desc--wide">
+					<p class="inner-promo__info">
+						Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! 
+						<span>Пожалуйста, заполните форму ниже:</span>
+					</p>
+				</div>
 			</div>
 		</section>
-
-		<p class="form-preview">
-			Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
-		</p>
 
 		<form class="form" action="#">
 			<fieldset class="form__fieldset">
@@ -137,6 +145,9 @@
 			<img src="" alt="">
 		</div>
 	</footer>
+
+	<script src="js/no-js.js"></script>
+	<script src="js/script.js"></script>
 	
 </body>
 </html>
