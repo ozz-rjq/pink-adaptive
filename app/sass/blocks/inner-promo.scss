@@ -1,0 +1,50 @@
+.inner-promo{
+	width: 100%;
+	margin-top: -66px;
+}
+
+.inner-promo__container{
+	width: 100%;
+	padding-top: 66px;
+	padding-bottom: 78px;
+	margin: 0 auto;
+
+	background-image: url("../img/bg-back-mobile@1x.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+.inner-promo__title{
+	width: 200px;
+	margin: 0 auto;
+	margin-top: 33px;
+
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+}
+
+.inner-promo__content{
+	width: 100%;
+
+	background-color: #fff;
+}
+
+.inner-promo__desc{
+	width: 320px;
+	margin: 0 auto;
+	padding-top: 46px;
+	padding-bottom: 48px;
+}
+
+.inner-promo__info{
+	margin: 0;
+	padding: 0;
+
+	font-size: 14px;
+	line-height: 30px;
+	text-align: center;
+	color: #283645;
+}
