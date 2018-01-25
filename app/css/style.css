@@ -2019,3 +2019,38 @@ a.contacts__field:active {
       display: inline; }
     .inner-promo__info span {
       display: inline; } }
+
+.panorama {
+  width: 100%; }
+
+.panorama__img {
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+  .panorama__img img {
+    display: block;
+    width: 100%;
+    height: auto; }
+
+.panorama__title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #d22856; }
+
+@media (min-width: 660px) {
+  .panorama__title {
+    top: 57px; } }
+
+@media (min-width: 1200px) {
+  .panorama__title {
+    top: 54px; } }
