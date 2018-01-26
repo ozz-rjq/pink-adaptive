@@ -280,12 +280,25 @@
 	}
 
 	.main-nav__link--active{
+		position: relative;
+
 		&:hover{
 			cursor: default;
 		}
 
 		&:active{
 			color: #fff;
+		}
+
+		&::before{
+			content: "";
+			position: absolute;
+			bottom: -13px;
+			left: 0;
+			right: 0;
+
+			height: 2px;
+			background-color: #fff;
 		}
 	}
 }
