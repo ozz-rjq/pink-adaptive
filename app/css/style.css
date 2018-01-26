@@ -2204,13 +2204,40 @@ a.contacts__field:active {
     width: 940px;
     padding-bottom: 23px; } }
 
+@media (min-width: 660px) {
+  .posts {
+    width: 620px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+
+@media (min-width: 1200px) {
+  .posts {
+    width: 940px; } }
+
 .post {
   width: 100%;
+  margin-bottom: 20px;
   background-color: #fff; }
 
 .post__wrapper {
   width: 280px;
-  margin: 0 auto; }
+  height: 100%;
+  margin: 0 auto;
+  background-color: #f2f2f2; }
 
 .post__img img {
   display: block; }
@@ -2247,7 +2274,7 @@ a.contacts__field:active {
 
 .post__row {
   padding-bottom: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2265,3 +2292,55 @@ a.contacts__field:active {
   text-transform: uppercase;
   text-indent: 18px;
   color: #d22856; }
+
+@media (min-width: 660px) {
+  .post {
+    width: 300px;
+    min-height: 455px; }
+  .post__wrapper {
+    position: relative;
+    width: 100%; }
+  .post__img img {
+    height: 300px;
+    width: 300px; }
+  .post__content {
+    width: 100%;
+    min-height: 155px;
+    padding-right: 28px;
+    padding-left: 28px; }
+  .post__desc {
+    margin-bottom: 0;
+    padding-bottom: 57px; }
+  .post__row {
+    position: absolute;
+    bottom: 0;
+    width: 240px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .post__set-like {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; }
+  .post__likes {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    text-indent: 0; } }
+
+@media (min-width: 1200px) {
+  .post {
+    width: 300px;
+    min-height: 455px; }
+  .post__img img {
+    height: 400px;
+    width: 300px; }
+  .post__likes {
+    text-indent: 0; } }

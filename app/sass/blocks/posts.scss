@@ -1,0 +1,17 @@
+@media (min-width: $tablet-width){
+	.posts{
+		width: 620px;
+		margin: 0 auto;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: stretch;
+		flex-wrap: wrap;
+	}
+}
+
+@media (min-width: $desktop-width){
+	.posts{
+		width: 940px;
+	}
+}
