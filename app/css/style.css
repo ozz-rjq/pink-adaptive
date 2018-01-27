@@ -714,6 +714,25 @@ body {
   border: 3px solid #d22856;
   -webkit-border-radius: 40px;
           border-radius: 40px; }
+  .button:hover {
+    cursor: pointer;
+    background-color: #d22856;
+    color: #fff; }
+  .button:active {
+    color: rgba(255, 255, 255, 0.3); }
+
+.button--pale {
+  color: #283645;
+  border-color: #283645;
+  opacity: 0.1; }
+  .button--pale:hover {
+    color: #283645;
+    border-color: #283645;
+    background-color: transparent;
+    opacity: 0.3; }
+  .button--pale:active {
+    color: rgba(255, 255, 255, 0.2);
+    background-color: #283645; }
 
 .promo {
   width: 100%;
@@ -2438,7 +2457,7 @@ a.contacts__field:active {
   .filter::after {
     content: "";
     position: absolute;
-    bottom: 100px;
+    bottom: 201px;
     left: 0;
     right: 0;
     height: 1px;
@@ -2503,7 +2522,13 @@ input[value=contrast]:checked ~ .filter__controls
   fill: #d22856; }
 
 .filter__buttons {
-  margin-top: 73px; }
+  margin-top: 73px;
+  padding-bottom: 41px; }
+
+.filter__button {
+  margin-bottom: 12px; }
+  .filter__button:last-child {
+    margin-bottom: 0; }
 
 @media (min-width: 660px) {
   .filter__wrapper {

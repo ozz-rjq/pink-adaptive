@@ -8,7 +8,7 @@
 	&::after{
 		content: "";
 		position: absolute;
-		bottom: 100px;
+		bottom:201px;
 		left: 0;
 		right: 0;
 
@@ -114,7 +114,17 @@ input[value=contrast]:checked ~ .filter__controls
 }
 
 .filter__buttons{
+
 	margin-top: 73px;
+	padding-bottom: 41px;
+}
+
+.filter__button{
+	margin-bottom: 12px;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
 }
 
 @media (min-width: $tablet-width){

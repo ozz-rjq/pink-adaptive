@@ -12,4 +12,35 @@
 	background-color: transparent;
 	border: 3px solid $pink;
 	border-radius: 40px;
+
+	&:hover{
+		cursor: pointer;
+
+		background-color: $pink;
+		color: #fff;
+	}
+
+	&:active{
+		color: rgba(#fff,0.3);
+	}
+}
+
+.button--pale{
+	color: #283645;
+	border-color: #283645;
+
+	opacity: 0.1;
+
+	&:hover{
+		color: #283645;
+		border-color: #283645;
+		background-color: transparent;
+
+		opacity: 0.3;
+	}
+
+	&:active{
+		color: rgba(#fff, 0.2);
+		background-color: #283645;
+	}
 }
