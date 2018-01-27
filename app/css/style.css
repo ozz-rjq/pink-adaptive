@@ -700,6 +700,21 @@ body {
   .like-btn:hover {
     cursor: pointer; }
 
+.button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 280px;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #d22856;
+  background-color: transparent;
+  border: 3px solid #d22856;
+  -webkit-border-radius: 40px;
+          border-radius: 40px; }
+
 .promo {
   width: 100%;
   margin: 0 auto;
@@ -2417,8 +2432,17 @@ a.contacts__field:active {
             border-radius: 50%; } }
 
 .filter {
+  position: relative;
   padding-top: 20px;
   background-color: #f2f2f2; }
+  .filter::after {
+    content: "";
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #dddfe0; }
 
 .filter__wrapper {
   width: 280px;
@@ -2431,14 +2455,16 @@ a.contacts__field:active {
   display: none; }
 
 .filter__controls {
+  display: block;
   margin-top: 42px;
   margin-bottom: 39px;
   text-align: center; }
 
 .filter__control {
   display: inline-block;
-  vertical-align: top; }
+  vertical-align: middle; }
   .filter__control svg {
+    display: block;
     fill: #b5b9be; }
   .filter__control:nth-child(1) {
     margin-right: 34px; }
@@ -2446,10 +2472,10 @@ a.contacts__field:active {
     margin-right: 40px; }
 
 .filter__bars {
+  height: 2px;
   text-align: center; }
 
 .filter__bar {
-  margin-bottom: 30px;
   display: none; }
 
 input[value=clip]:checked ~ .filter__bars
@@ -2475,6 +2501,9 @@ input[value=contrast]:checked ~ .filter__bars
 input[value=contrast]:checked ~ .filter__controls
 .filter__control[for=filter-contrast] svg {
   fill: #d22856; }
+
+.filter__buttons {
+  margin-top: 73px; }
 
 @media (min-width: 660px) {
   .filter__wrapper {
