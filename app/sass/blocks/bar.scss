@@ -1,0 +1,56 @@
+.bar{
+	position: relative;
+
+	display: inline-block;
+	vertical-align: top;
+	
+	width: 240px;
+	height: 2px;
+
+	background-color: #283645;
+}
+
+.bar__toggle{
+	position: absolute;
+	top: -6px;
+	left: 67%;
+
+	width: 10px;
+	height: 15px;
+
+	background-color: #fff;
+	border: 2px solid $pink;
+	border-radius: 50%;
+}
+
+.bar--paint .bar__toggle{
+	left: 17%;
+}
+
+.bar--contrast .bar__toggle{
+	left: 44%;
+}
+
+@media (min-width: $tablet-width){
+	.bar{
+		position: relative;
+
+		width: 202px;
+		height: 2px;
+
+		background-color: #283645;
+	}
+
+	.bar__toggle{
+		position: absolute;
+		top: -6px;
+		left: 64%;
+
+		width: 10px;
+		height: 15px;
+
+		background-color: #fff;
+		border: 2px solid $pink;
+		border-radius: 50%;
+	}
+}

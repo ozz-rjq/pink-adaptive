@@ -9,6 +9,97 @@
 	margin: 0 auto;
 }
 
+.filter__img{
+
+	img{
+		display: block;
+	}
+}
+
+.filter__content{
+
+}
+
+.filter__properties{
+
+	input[type=radio]{
+		display: none;
+	}
+}
+
+.filter__controls{
+	margin-top: 42px;
+	margin-bottom: 39px;
+
+	text-align: center;
+}
+
+.filter__control{
+	display: inline-block;
+	vertical-align: top;
+
+	//width: 48px;
+	//height: 44px;
+
+	svg{
+		fill: #b5b9be;
+	}
+
+	&:nth-child(1){
+		margin-right: 34px;
+	}
+
+	&:nth-child(2){
+		margin-right: 40px;
+	}
+}
+
+.filter__bars{
+	text-align: center;
+}
+
+.filter__bar{
+	margin-bottom: 30px;
+
+	display: none;
+}
+
+input[value=clip]:checked ~ .filter__bars
+	.filter__bar.bar--clip{
+		display: inline-block;
+}
+
+input[value=clip]:checked ~ .filter__controls
+	.filter__control[for=filter-clip]{
+		svg{
+			fill: $pink;
+		}
+}
+
+input[value=paint]:checked ~ .filter__bars
+	.filter__bar.bar--paint{
+		display: inline-block;
+}
+
+input[value=paint]:checked ~ .filter__controls
+	.filter__control[for=filter-paint]{
+		svg{
+			fill: $pink;
+		}
+}
+
+input[value=contrast]:checked ~ .filter__bars
+	.filter__bar.bar--contrast{
+		display: inline-block;
+}
+
+input[value=contrast]:checked ~ .filter__controls
+	.filter__control[for=filter-contrast]{
+		svg{
+			fill: $pink;
+		}
+}
+
 @media (min-width: $tablet-width){
 	.filter__wrapper{
 		display: flex;

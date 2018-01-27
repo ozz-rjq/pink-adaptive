@@ -2374,6 +2374,48 @@ a.contacts__field:active {
   .summary__wrapper {
     width: 940px; } }
 
+.bar {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 240px;
+  height: 2px;
+  background-color: #283645; }
+
+.bar__toggle {
+  position: absolute;
+  top: -6px;
+  left: 67%;
+  width: 10px;
+  height: 15px;
+  background-color: #fff;
+  border: 2px solid #d22856;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+
+.bar--paint .bar__toggle {
+  left: 17%; }
+
+.bar--contrast .bar__toggle {
+  left: 44%; }
+
+@media (min-width: 660px) {
+  .bar {
+    position: relative;
+    width: 202px;
+    height: 2px;
+    background-color: #283645; }
+  .bar__toggle {
+    position: absolute;
+    top: -6px;
+    left: 64%;
+    width: 10px;
+    height: 15px;
+    background-color: #fff;
+    border: 2px solid #d22856;
+    -webkit-border-radius: 50%;
+            border-radius: 50%; } }
+
 .filter {
   padding-top: 20px;
   background-color: #f2f2f2; }
@@ -2381,6 +2423,58 @@ a.contacts__field:active {
 .filter__wrapper {
   width: 280px;
   margin: 0 auto; }
+
+.filter__img img {
+  display: block; }
+
+.filter__properties input[type=radio] {
+  display: none; }
+
+.filter__controls {
+  margin-top: 42px;
+  margin-bottom: 39px;
+  text-align: center; }
+
+.filter__control {
+  display: inline-block;
+  vertical-align: top; }
+  .filter__control svg {
+    fill: #b5b9be; }
+  .filter__control:nth-child(1) {
+    margin-right: 34px; }
+  .filter__control:nth-child(2) {
+    margin-right: 40px; }
+
+.filter__bars {
+  text-align: center; }
+
+.filter__bar {
+  margin-bottom: 30px;
+  display: none; }
+
+input[value=clip]:checked ~ .filter__bars
+.filter__bar.bar--clip {
+  display: inline-block; }
+
+input[value=clip]:checked ~ .filter__controls
+.filter__control[for=filter-clip] svg {
+  fill: #d22856; }
+
+input[value=paint]:checked ~ .filter__bars
+.filter__bar.bar--paint {
+  display: inline-block; }
+
+input[value=paint]:checked ~ .filter__controls
+.filter__control[for=filter-paint] svg {
+  fill: #d22856; }
+
+input[value=contrast]:checked ~ .filter__bars
+.filter__bar.bar--contrast {
+  display: inline-block; }
+
+input[value=contrast]:checked ~ .filter__controls
+.filter__control[for=filter-contrast] svg {
+  fill: #d22856; }
 
 @media (min-width: 660px) {
   .filter__wrapper {
