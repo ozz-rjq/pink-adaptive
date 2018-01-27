@@ -44,3 +44,9 @@
 		background-color: #283645;
 	}
 }
+
+@media (min-width: $tablet-width){
+	.button{
+		width: 260px;
+	}
+}

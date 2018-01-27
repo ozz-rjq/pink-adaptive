@@ -128,29 +128,101 @@ input[value=contrast]:checked ~ .filter__controls
 }
 
 @media (min-width: $tablet-width){
+	.filter{
+		padding-top: 57px;
+
+		&::after{
+			display: none;
+		}
+	}
+
 	.filter__wrapper{
+		width: 620px;
+
 		display: flex;
+		justify-content: space-between;
+	}
+
+	.filter__img{
+		width: 300px;
+	}
+
+	.filter__content{
+		width: 300px;
 	}
 
 	.filter__properties{
 		display: flex;
 	}
 
-	.filter__labels{
-		width: 100px;
+	.filter__controls{
+		margin-top: 0;
+		margin-bottom: 0;
+
+		width: 80px;
 		display: flex;
 		flex-wrap: wrap;
+	}
 
-		label{
-			width: 150px;
-			height: 50px;
-			border-bottom: 1px solid black;
+	.filter__control{
+		width: 52px;
+		padding-bottom: 23px;
+		margin-top: 25px;
+		margin-left: 28px;
+
+		svg{
+			width: 23px;
+			height: 24px;
+
+			fill: $pink;
+		}
+
+		&:nth-child(1){
+			margin-right: 0;
+			margin-top: 9px;
+		}	
+
+		&:nth-child(2){
+			margin-right: 0;
 		}
 	}
 
 	.filter__bar{
-		height: 50px;
-		border-bottom: 1px solid black;
+		position: relative;
+
+		display: inline-block;
+
+		margin-top: 36px;
+		margin-bottom: 34px;
+
+		&:first-child{
+			margin-top: 19px;
+		}
+
+		&::after{
+			content: "";
+			position: absolute;
+			top: 37px;
+			left: -61px;
+
+			width: 275px;
+			height: 1px;
+			background-color: #dddfe0;
+		}
+	}
+
+	.filter__buttons{
+		margin-left: 27px;
+		margin-top: 66px;
+		padding-bottom: 54px;
+	}
+
+	.filter__button{
+		margin-bottom: 24px;
+
+		&:nth-child(2){
+			margin-bottom: 0;
+		}
 	}
 }
 
