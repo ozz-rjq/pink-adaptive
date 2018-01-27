@@ -1,0 +1,43 @@
+.filter{
+	padding-top: 20px;
+
+	background-color: #f2f2f2;
+}
+
+.filter__wrapper{
+	width: 280px;
+	margin: 0 auto;
+}
+
+@media (min-width: $tablet-width){
+	.filter__wrapper{
+		display: flex;
+	}
+
+	.filter__properties{
+		display: flex;
+	}
+
+	.filter__labels{
+		width: 100px;
+		display: flex;
+		flex-wrap: wrap;
+
+		label{
+			width: 150px;
+			height: 50px;
+			border-bottom: 1px solid black;
+		}
+	}
+
+	.filter__bar{
+		height: 50px;
+		border-bottom: 1px solid black;
+	}
+}
+
+@media (min-width: $desktop-width){
+
+
+
+}

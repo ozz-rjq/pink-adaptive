@@ -2373,3 +2373,39 @@ a.contacts__field:active {
     margin-bottom: 65px; }
   .summary__wrapper {
     width: 940px; } }
+
+.filter {
+  padding-top: 20px;
+  background-color: #f2f2f2; }
+
+.filter__wrapper {
+  width: 280px;
+  margin: 0 auto; }
+
+@media (min-width: 660px) {
+  .filter__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .filter__properties {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .filter__labels {
+    width: 100px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .filter__labels label {
+      width: 150px;
+      height: 50px;
+      border-bottom: 1px solid black; }
+  .filter__bar {
+    height: 50px;
+    border-bottom: 1px solid black; } }
