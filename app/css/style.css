@@ -2285,7 +2285,9 @@ a.contacts__field:active {
   background-color: #f2f2f2; }
 
 .post__img img {
-  display: block; }
+  display: block;
+  width: 280px;
+  height: 180px; }
 
 .post__content {
   -webkit-box-sizing: border-box;
@@ -2385,8 +2387,8 @@ a.contacts__field:active {
     width: 300px;
     min-height: 455px; }
   .post__img img {
-    height: 400px;
-    width: 300px; }
+    width: 300px;
+    height: 400px; }
   .post__likes {
     text-indent: 0; } }
 
@@ -2461,6 +2463,13 @@ a.contacts__field:active {
     -webkit-border-radius: 50%;
             border-radius: 50%; } }
 
+@media (min-width: 1200px) {
+  .bar {
+    position: relative;
+    width: 280px;
+    height: 2px;
+    background-color: #283645; } }
+
 .filter {
   position: relative;
   padding-top: 20px;
@@ -2479,7 +2488,9 @@ a.contacts__field:active {
   margin: 0 auto; }
 
 .filter__img img {
-  display: block; }
+  display: block;
+  width: 280;
+  height: 374px; }
 
 .filter__properties input[type=radio] {
   display: none; }
@@ -2546,6 +2557,9 @@ input[value=contrast]:checked ~ .filter__controls
     padding-top: 57px; }
     .filter::after {
       display: none; }
+    .filter img {
+      width: 300px;
+      height: 400px; }
   .filter__wrapper {
     width: 620px;
     display: -webkit-box;

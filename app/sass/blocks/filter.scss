@@ -26,6 +26,8 @@
 
 	img{
 		display: block;
+		width: 280;
+		height: 374px;
 	}
 }
 
@@ -133,6 +135,11 @@ input[value=contrast]:checked ~ .filter__controls
 
 		&::after{
 			display: none;
+		}
+
+		img{
+			width: 300px;
+			height: 400px;
 		}
 	}
 

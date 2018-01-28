@@ -54,3 +54,14 @@
 		border-radius: 50%;
 	}
 }
+
+@media (min-width: $desktop-width){
+	.bar{
+		position: relative;
+
+		width: 280px;
+		height: 2px;
+
+		background-color: #283645;
+	}
+}
