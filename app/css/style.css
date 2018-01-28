@@ -713,7 +713,10 @@ body {
   background-color: transparent;
   border: 3px solid #d22856;
   -webkit-border-radius: 40px;
-          border-radius: 40px; }
+          border-radius: 40px;
+  -webkit-transition: background-color 0.3s, opacity 0.25s;
+  -o-transition: background-color 0.3s, opacity 0.25s;
+  transition: background-color 0.3s, opacity 0.25s; }
   .button:hover {
     cursor: pointer;
     background-color: #d22856;
@@ -2582,6 +2585,10 @@ input[value=contrast]:checked ~ .filter__controls
       width: 23px;
       height: 24px;
       fill: #d22856; }
+    .filter__control .svg-contrast {
+      width: 16px;
+      height: 16px;
+      margin-left: 6px; }
     .filter__control:nth-child(1) {
       margin-right: 0;
       margin-top: 9px; }
@@ -2654,6 +2661,6 @@ input[value=contrast]:checked ~ .filter__controls
     padding-bottom: 57px; }
   .filter__button {
     margin-bottom: 0;
-    margin-right: 40px; }
+    margin-right: 38px; }
     .filter__button:last-child {
       margin-right: 0; } }

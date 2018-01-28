@@ -177,6 +177,12 @@ input[value=contrast]:checked ~ .filter__controls
 			fill: $pink;
 		}
 
+		.svg-contrast{
+			width: 16px;
+			height: 16px;
+			margin-left: 6px;
+		}
+
 		&:nth-child(1){
 			margin-right: 0;
 			margin-top: 9px;
@@ -298,7 +304,7 @@ input[value=contrast]:checked ~ .filter__controls
 
 	.filter__button{
 		margin-bottom: 0;
-		margin-right: 40px;
+		margin-right: 38px;
 
 		&:last-child{
 			margin-right: 0;
