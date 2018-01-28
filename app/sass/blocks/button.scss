@@ -50,3 +50,9 @@
 		width: 260px;
 	}
 }
+
+@media (min-width: $desktop-width){
+	.button{
+		width: 183px;
+	}
+}

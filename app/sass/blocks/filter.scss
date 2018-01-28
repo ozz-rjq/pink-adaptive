@@ -227,7 +227,77 @@ input[value=contrast]:checked ~ .filter__controls
 }
 
 @media (min-width: $desktop-width){
+	.filter{
+		width: 940px;
+		margin: 0 auto;
+	}
 
+	.filter__wrapper{
+		width: 800px;
+	}
 
+	.filter__img{
+		margin-right: 80px;
+	}
+
+	.filter__content{
+		width: auto;
+	}
+
+	.filter__controls{
+
+	}
+
+	.filter__control{
+		width: 92px;
+		padding-bottom: 0;
+		margin-top: 0;
+		margin-left: 0;
+		margin-bottom: 30px;
+
+		svg{
+			margin-right: 0;
+			width: 44px;
+			height: 44px;
+		}
+
+		.svg-contrast{
+			width: 32px;
+			height: 32px;
+			margin-left: 6px;
+		}
+
+		&:nth-child(1){
+			margin-top: 0;
+		}
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	.filter__bar{
+		width: 288px;
+
+		&::after{
+			left: -116px;
+
+			width: 410px;
+		}
+	}
+
+	.filter__buttons{
+		margin-top: 166px;
+		padding-bottom: 57px;
+	}
+
+	.filter__button{
+		margin-bottom: 0;
+		margin-right: 43px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}
 
 }
