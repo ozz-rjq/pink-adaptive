@@ -2618,9 +2618,11 @@ input[value=contrast]:checked ~ .filter__controls
   .filter__wrapper {
     width: 800px; }
   .filter__img {
-    margin-right: 80px; }
+    margin-right: 91px; }
   .filter__content {
-    width: auto; }
+    width: 410px; }
+  .filter__controls {
+    width: 92px; }
   .filter__control {
     width: 92px;
     padding-bottom: 0;
@@ -2639,16 +2641,19 @@ input[value=contrast]:checked ~ .filter__controls
       margin-top: 0; }
     .filter__control:last-child {
       margin-bottom: 0; }
+  .filter__bars {
+    width: 280px; }
   .filter__bar {
     width: 288px; }
     .filter__bar::after {
-      left: -116px;
+      left: -92px;
       width: 410px; }
   .filter__buttons {
+    margin-left: 0;
     margin-top: 166px;
     padding-bottom: 57px; }
   .filter__button {
     margin-bottom: 0;
-    margin-right: 43px; }
+    margin-right: 40px; }
     .filter__button:last-child {
       margin-right: 0; } }
