@@ -1,0 +1,40 @@
+.form-btn{
+	box-sizing: border-box;
+	width: 100%;
+	padding-top: 17px;
+	padding-bottom: 16px;
+
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+
+	background-color: #2aab6d;
+	border-radius: 2px;
+	border: none;
+
+	&:hover{
+		cursor: pointer;
+
+		background-color: #1c9b5e;
+	}
+
+	&:active{
+		color: rgba(#fff, 0.3);
+	}
+}
+
+.form-btn--disabled{
+	background-color: #e5e5e5;
+
+	&:hover{
+		cursor: default;
+
+		background-color: #e5e5e5;
+	}
+
+	&:active{
+		color: #fff;
+	}
+}

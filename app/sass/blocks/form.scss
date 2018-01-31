@@ -228,3 +228,20 @@
 		outline: none;
 	}
 }
+
+.form__info{
+	display: block;
+	margin-top: 35px;
+	margin-bottom: 15px;
+
+	font-size: 14px;
+	line-height: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-align: center;
+	color: #283645;
+
+	sup{
+		color: $pink;
+	}
+}
