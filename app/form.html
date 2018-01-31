@@ -52,83 +52,85 @@
 			</div>
 		</section>
 
-		<form class="form" action="#">
-			<fieldset class="form__fieldset">
-				<div class="form__wrap">
-					<label for="surname"> Фамилия: </label>
-					<input class="form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
-				</div>
+		<form class="form" action="#" method="POST">
+			<div class="form__wrapper">
+				<fieldset class="form__fieldset">
+					<div class="form__wrap">
+						<label class="form__label" for="surname"> Фамилия: </label>
+						<input class="form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
+					</div>
 
-				<div class="form__wrap">
-					<label for="name"> Имя: </label>
-					<input class="form__input" type="text" name="name" id="name" placeholder="Введите ваше имя *">
-				</div>
+					<div class="form__wrap">
+						<label class="form__label" for="name"> Имя: </label>
+						<input class="form__input" type="text" name="name" id="name" placeholder="Введите ваше имя *">
+					</div>
 
-				<div class="form__wrap">
-					<label for="patronym"> Имя: </label>
-					<input class="form__input" type="text" name="patronym" id="patronym" placeholder="Ну и отчество тоже">
-				</div>
-			</fieldset>
+					<div class="form__wrap">
+						<label class="form__label" for="patronym"> Отчество: </label>
+						<input class="form__input" type="text" name="patronym" id="patronym" placeholder="Ну и отчество тоже">
+					</div>
+				</fieldset>
 
-			<fieldset class="form__fieldset">
-				<legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+				<fieldset class="form__fieldset">
+					<legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
 
-				<input type="checkbox" name="achievement" value="shark" id="achieve-1">
-				<label for="achieve-1">Сделал селфи с акулой</label>
+					<input type="checkbox" name="achievement" value="shark" id="achieve-1">
+					<label for="achieve-1">Сделал селфи с акулой</label>
 
-				<input type="checkbox" name="achievement" value="beach" id="achieve-2">
-				<label for="achieve-2">Обгорел на пляже</label>
+					<input type="checkbox" name="achievement" value="beach" id="achieve-2">
+					<label for="achieve-2">Обгорел на пляже</label>
 
-				<input type="checkbox" name="achievement" value="chack" id="achieve-3">
-				<label for="achieve-3">Видел Чака Норриса</label>
+					<input type="checkbox" name="achievement" value="chack" id="achieve-3">
+					<label for="achieve-3">Видел Чака Норриса</label>
 
-				<input type="checkbox" name="achievement" value="souvenirs" id="achieve-4">
-				<label for="achieve-4">Накупил сувениров</label>
+					<input type="checkbox" name="achievement" value="souvenirs" id="achieve-4">
+					<label for="achieve-4">Накупил сувениров</label>
 
-				<input type="checkbox" name="achievement" value="tower" id="achieve-5">
-				<label for="achieve-5">Удержал башню</label>
+					<input type="checkbox" name="achievement" value="tower" id="achieve-5">
+					<label for="achieve-5">Удержал башню</label>
 
-				<input type="checkbox" name="achievement" value="hotel" id="achieve-6">
-				<label for="achieve-6">Разгромил отель</label>
-			</fieldset>
+					<input type="checkbox" name="achievement" value="hotel" id="achieve-6">
+					<label for="achieve-6">Разгромил отель</label>
+				</fieldset>
 
-			<fieldset class="form__fieldset">
-				<div class="form__wrap">
-					<label for="phone">Номер телефона</label>
-					<input class="form__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
-				</div>
+				<fieldset class="form__fieldset">
+					<div class="form__wrap">
+						<label for="phone">Номер телефона</label>
+						<input class="form__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+					</div>
 
-				<div class="form__wrap">
-					<label for="email">Адрес почты</label>
-					<input class="form__input" type="email" name="email" id="email" placeholder="Введите почту *">
-				</div>
-			</fieldset>
+					<div class="form__wrap">
+						<label for="email">Адрес почты</label>
+						<input class="form__input" type="email" name="email" id="email" placeholder="Введите почту *">
+					</div>
+				</fieldset>
 
-			<fieldset class="form__fieldset">
-				<legend class="form__legend">
-					С каким приложением путешествовали?
-				</legend>
+				<fieldset class="form__fieldset">
+					<legend class="form__legend">
+						С каким приложением путешествовали?
+					</legend>
 
-				<input class="form__input" type="radio" name="os" value="ios" id="ios">
-				<label for="ios">Pink для iOS</label>
+					<input class="form__input" type="radio" name="os" value="ios" id="ios">
+					<label for="ios">Pink для iOS</label>
 
-				<input class="form__input" type="radio" name="os" value="android" id="android">
-				<label for="android">Pink на Android</label>
+					<input class="form__input" type="radio" name="os" value="android" id="android">
+					<label for="android">Pink на Android</label>
 
-				<input class="form__input" type="radio" name="os" value="windows" id="windows">
-				<label for="windows">Windows Phone</label>
-			</fieldset>
+					<input class="form__input" type="radio" name="os" value="windows" id="windows">
+					<label for="windows">Windows Phone</label>
+				</fieldset>
 
-			<fieldset class="form__fieldset">
-				<legend class="form__legend">Опишите свои эмоции</legend>
+				<fieldset class="form__fieldset">
+					<legend class="form__legend">Опишите свои эмоции</legend>
 
-				<textarea class="form__input" name="emotions" id="noid" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-			</fieldset>
+					<textarea class="form__input" name="emotions" id="noid" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+				</fieldset>
 
-			<fieldset class="form__fieldset">
-				<button class="button form__submit" type="submit">Отправить форму</button>
-				<b><sup>*</sup> — обязательные поля</b>
-			</fieldset>
+				<fieldset class="form__fieldset">
+					<button class="button form__submit" type="submit">Отправить форму</button>
+					<b><sup>*</sup> — обязательные поля</b>
+				</fieldset>
+			</div>
 		</form>
 	</main>
 
