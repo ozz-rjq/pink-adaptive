@@ -2905,3 +2905,24 @@ input[value=contrast]:checked ~ .filter__controls
   color: #283645; }
   .form__info sup {
     color: #d22856; }
+
+.modal {
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15); }
+
+.modal__title {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center; }
+
+.modal__desc {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center; }
+
+.modal__bottom {
+  width: 280px;
+  margin: 0 auto; }
