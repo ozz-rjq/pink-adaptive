@@ -2725,3 +2725,24 @@ input[value=contrast]:checked ~ .filter__controls
           border-radius: 2px; }
   .form__input:focus {
     outline: 1px solid #d22856; }
+
+.form__legend {
+  width: 230px;
+  margin: 0 auto;
+  padding-top: 38px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #d22856; }
+
+.form__group input {
+  display: none; }
+
+.form__group label {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 70px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645; }
