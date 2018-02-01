@@ -365,7 +365,7 @@
 	}
 
 	.form__wrap--reverse .form__label{
-		order: 2;
+		order: 3;
 
 		margin-top: 10px;
 		margin-bottom: 0;
@@ -375,7 +375,18 @@
 
 	.form__wrap--reverse .form__input{
 		order: 1;
-		width: 100%;
+		width: 70%;
+	}
+
+	.form__icon{
+		order: 2;
+
+		width: 60px;
+		height: 63px;
+
+		background-color: #e5e5e5;
+		border-top-right-radius: 2px;
+		border-bottom-right-radius: 2px;
 	}
 
 	.form__emoji .form__legend{
@@ -386,9 +397,15 @@
 		margin-bottom: 51px;
 	}
 
+	.form__send{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
 	.form__fieldset--send{
-		display: flex;
-		justify-content: space-between;
+		//display: flex;
+		//flex-wrap: nowrap;
+		//justify-content: space-between;
 	}
 
 	.form__submit{
@@ -396,6 +413,8 @@
 	}
 
 	.form__info{
-		width: auto;
+		display: inline-block;
+		width: 200px;
+		margin-left: 115px;
 	}
 }

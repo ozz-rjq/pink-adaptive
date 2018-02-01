@@ -115,12 +115,12 @@
 					<legend class="form__legend  form__legend--hidden">Контактная информация</legend>
 					<div class="form__wrap  form__wrap--reverse">
 						<label class="form__label" for="phone">Номер телефона</label>
-						<input class="form__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+						<input class="form__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста"><span class="form__icon"></span>
 					</div>
 
 					<div class="form__wrap  form__wrap--reverse">
 						<label class="form__label" for="email">Адрес почты</label>
-						<input class="form__input" type="email" name="email" id="email" placeholder="Введите почту *">
+						<input class="form__input" type="email" name="email" id="email" placeholder="Введите почту *"><span class="form__icon"></span>
 					</div>
 				</fieldset>
 			</div>
@@ -158,11 +158,13 @@
 				</fieldset>
 			</div>
 
-			<div class="form__wrapper  form__send">
-				<fieldset class="form__fieldset  form__fieldset--send">
-					<button class="form-btn  form__submit" type="submit">Отправить форму</button>
-					<b class="form__info"><sup>*</sup> — обязательные поля</b>
-				</fieldset>
+			<div class="form__send">
+				<div class="form__wrapper">
+					<fieldset class="form__fieldset  form__fieldset--send">
+						<button class="form-btn  form__submit" type="submit">Отправить форму</button>
+						<b class="form__info"><sup>*</sup> — обязательные поля</b>
+					</fieldset>
+				</div>
 			</div>
 		</form>
 	</main>
