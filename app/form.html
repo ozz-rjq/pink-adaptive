@@ -53,7 +53,7 @@
 		</section>
 
 		<form class="form" action="#" method="POST">
-			<div class="form__wrapper">
+			<div class="form__wrapper  form__general">
 				<fieldset class="form__fieldset">
 					<div class="form__wrap">
 						<label class="form__label" for="surname"> Фамилия: </label>
@@ -72,7 +72,7 @@
 				</fieldset>
 			</div>
 
-			<div class="form__wide">
+			<div class="form__wide  form__achievements">
 				<div class="form__wrapper">
 					<fieldset class="form__fieldset">
 						<legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
@@ -110,21 +110,22 @@
 				</div>
 			</div>
 
-			<div class="form__wrapper">
+			<div class="form__wrapper  form__address">
 				<fieldset class="form__fieldset  form__fieldset--address">
-					<div class="form__wrap">
+					<legend class="form__legend  form__legend--hidden">Контактная информация</legend>
+					<div class="form__wrap  form__wrap--reverse">
 						<label class="form__label" for="phone">Номер телефона</label>
 						<input class="form__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
 					</div>
 
-					<div class="form__wrap">
+					<div class="form__wrap  form__wrap--reverse">
 						<label class="form__label" for="email">Адрес почты</label>
 						<input class="form__input" type="email" name="email" id="email" placeholder="Введите почту *">
 					</div>
 				</fieldset>
 			</div>
 
-			<div class="form__wide">
+			<div class="form__wide  form__app">
 				<div class="form__wrapper">
 					<fieldset class="form__fieldset  form__fieldset--app">
 						<legend class="form__legend">
@@ -145,13 +146,11 @@
 							<input class="form__radio" type="radio" name="os" value="windows" id="windows">
 							<label for="windows">Windows Phone</label>
 						</div>
-
-						
 					</fieldset>
 				</div>
 			</div>
 
-			<div class="form__wrapper">
+			<div class="form__wrapper  form__emoji">
 				<fieldset class="form__fieldset  form__fieldset--emoji">
 					<legend class="form__legend">Опишите свои эмоции</legend>
 
@@ -159,8 +158,8 @@
 				</fieldset>
 			</div>
 
-			<div class="form__wrapper">
-				<fieldset class="form__fieldset">
+			<div class="form__wrapper  form__send">
+				<fieldset class="form__fieldset  form__fieldset--send">
 					<button class="form-btn  form__submit" type="submit">Отправить форму</button>
 					<b class="form__info"><sup>*</sup> — обязательные поля</b>
 				</fieldset>
