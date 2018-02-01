@@ -256,6 +256,8 @@
 		flex-wrap: wrap;
 	}
 
+	//change blocks order
+
 	.form__general{
 		order: 1;
 	}
@@ -279,6 +281,8 @@
 	.form__send{
 		order: 6;
 	}
+
+	//set initial params
 
 	.form__wrapper{
 		width: 620px;
@@ -314,6 +318,8 @@
 	.form__wide{
 		background-color: #fff;
 	}
+
+	//set main fieldset properties
 
 	.form__fieldset{
 		border: 2px solid #e5e5e5;
@@ -354,6 +360,8 @@
 		}
 	}
 
+	// ADDRESS BLOCK
+
 	.form__wrap--reverse{
 		flex-wrap: wrap;
 
@@ -378,7 +386,7 @@
 		width: 70%;
 	}
 
-	.form__icon{
+	.form__wrap--reverse .form__icon{
 		order: 2;
 
 		width: 60px;
@@ -389,6 +397,8 @@
 		border-bottom-right-radius: 2px;
 	}
 
+	//TEXTAREA
+
 	.form__emoji .form__legend{
 		padding-bottom: 33px;
 	}
@@ -396,6 +406,8 @@
 	.form__textarea{
 		margin-bottom: 51px;
 	}
+
+	// LAST (SEND) BLOCK
 
 	.form__send{
 		width: 100%;

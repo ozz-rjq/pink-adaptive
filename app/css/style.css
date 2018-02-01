@@ -3014,7 +3014,7 @@ input[value=contrast]:checked ~ .filter__controls
         -ms-flex-order: 1;
             order: 1;
     width: 70%; }
-  .form__icon {
+  .form__wrap--reverse .form__icon {
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
         -ms-flex-order: 2;
