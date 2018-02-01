@@ -3040,6 +3040,25 @@ input[value=contrast]:checked ~ .filter__controls
     width: 200px;
     margin-left: 115px; } }
 
+@media (min-width: 1200px) {
+  .form {
+    width: 940px;
+    margin: 0 auto; }
+  .form__general {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 435px;
+    margin: 0;
+    margin-right: 40px; }
+  .form__app {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 439px; }
+  .form__fieldset--app {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 439px; } }
+
 .modal {
   width: 320px;
   margin-bottom: 30px;

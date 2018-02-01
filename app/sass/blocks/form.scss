@@ -430,3 +430,27 @@
 		margin-left: 115px;
 	}
 }
+
+@media (min-width: $desktop-width){
+	.form{
+		width: 940px;
+		margin: 0 auto;
+	}
+
+	.form__general{
+		box-sizing: border-box;
+		width: 435px;
+		margin: 0;
+		margin-right: 40px;
+	}
+
+	.form__app{
+		box-sizing: border-box;
+		width: 439px;
+	}
+
+	.form__fieldset--app{
+		box-sizing: border-box;
+		width: 439px;
+	}
+}
