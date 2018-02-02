@@ -12,7 +12,7 @@
 
 	@media (min-resolution: $retina-dppx), 
 		(min-resolution: $retina-dpi){
-			background-image: url("../../img/bg-back-mobile@2x.jpg");
+			background-image: url("../img/bg-back-mobile@2x.jpg");
 		}
 }
 
@@ -97,7 +97,7 @@
 
 		@media (min-resolution: $retina-dppx), 
 			(min-resolution: $retina-dpi){
-				background-image: url("../../img/bg-back-tablet@2x.jpg");
+				background-image: url("../img/bg-back-tablet@2x.jpg");
 			}
 	}
 
@@ -171,7 +171,7 @@
 
 		@media (min-resolution: $retina-dppx), 
 			(min-resolution: $retina-dpi){
-				background-image: url("../../img/bg-back-desktop@2x.jpg");
+				background-image: url("../img/bg-back-desktop@2x.jpg");
 			}
 	}
 

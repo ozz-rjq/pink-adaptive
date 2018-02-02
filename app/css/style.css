@@ -813,7 +813,7 @@ body {
   margin-top: -66px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
     .promo {
-      background-image: url("../../img/bg-back-mobile@2x.jpg"); } }
+      background-image: url("../img/bg-back-mobile@2x.jpg"); } }
 
 .promo__container {
   width: 320px;
@@ -885,7 +885,7 @@ body {
             background-size: 1200px 729px; } }
   @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 660px) and (min-resolution: 1.5dppx), (min-width: 660px) and (min-resolution: 144dpi) {
     .promo {
-      background-image: url("../../img/bg-back-tablet@2x.jpg"); } }
+      background-image: url("../img/bg-back-tablet@2x.jpg"); } }
 
 @media (min-width: 660px) {
   .promo__container {
@@ -939,7 +939,7 @@ body {
             background-size: 2560px 853px; } }
   @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1200px) and (min-resolution: 1.5dppx), (min-width: 1200px) and (min-resolution: 144dpi) {
     .promo {
-      background-image: url("../../img/bg-back-desktop@2x.jpg"); } }
+      background-image: url("../img/bg-back-desktop@2x.jpg"); } }
 
 @media (min-width: 1200px) {
   .promo__container {
@@ -2062,9 +2062,15 @@ a.contacts__field:active {
   padding-top: 66px;
   padding-bottom: 78px;
   margin: 0 auto;
+  background-color: #2c3c4c;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: top center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  -webkit-background-size: 700px 462px;
+          background-size: 700px 462px; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+    .inner-promo__container {
+      background-image: url("../img/bg-back-mobile@2x.jpg"); } }
 
 .inner-promo__title {
   width: 200px;
@@ -2105,7 +2111,14 @@ a.contacts__field:active {
     width: 100%;
     padding-top: 110px;
     padding-bottom: 136px;
-    background-image: url("../img/bg-back-tablet@1x.jpg"); }
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    -webkit-background-size: 1200px 729px;
+            background-size: 1200px 729px; } }
+  @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 660px) and (min-resolution: 1.5dppx), (min-width: 660px) and (min-resolution: 144dpi) {
+    .inner-promo__container {
+      background-image: url("../img/bg-back-tablet@2x.jpg"); } }
+
+@media (min-width: 660px) {
   .inner-promo__title {
     width: 400px;
     margin: 0 auto;
@@ -2140,7 +2153,14 @@ a.contacts__field:active {
     width: 100%;
     padding-top: 110px;
     padding-bottom: 95px;
-    background-image: url("../img/bg-back-desktop@1x.jpg"); }
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    -webkit-background-size: 2560px 853px;
+            background-size: 2560px 853px; } }
+  @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1200px) and (min-resolution: 1.5dppx), (min-width: 1200px) and (min-resolution: 144dpi) {
+    .inner-promo__container {
+      background-image: url("../img/bg-back-desktop@2x.jpg"); } }
+
+@media (min-width: 1200px) {
   .inner-promo__title {
     width: 400px;
     margin: 0 auto;
