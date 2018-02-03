@@ -546,5 +546,50 @@
 		padding-left: 60px;
 	}
 
+	/** DESCRIBE YOUR EMITONS BLOCK **/
 
+	.form__emoji{
+		width: 940px;
+	}
+
+	.form__emoji .form__wrapper{
+		width: 940px;
+	}
+
+	.form__emoji .form__textarea{
+		height: 128px;
+	}
+
+	//SEND BLOCK
+
+	.form__send{
+		width: 940px;
+	}
+
+	.form__send .form__wrapper{
+		width: 940px;
+	}
+
+	.form__send .form__info{
+		margin-left: 435px;
+	}
+}
+
+
+//Fix mozilla legend
+@-moz-document url-prefix() {
+	@media (min-width: $desktop-width){
+		 .form__fieldset--app .form__legend{
+			box-sizing: content-box;
+			width: 368px;
+
+			padding: 0;
+			margin-bottom: 50px;
+			margin-top: 50px;
+		}
+
+		.form__fieldset--app{
+			margin-top: -60px;
+		}
+	}
 }

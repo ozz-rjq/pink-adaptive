@@ -3198,7 +3198,31 @@ input[value=contrast]:checked ~ .filter__controls
   .form__achievements .form__group--normal {
     width: 295px; }
   .form__achievements label {
-    padding-left: 60px; } }
+    padding-left: 60px; }
+  /** DESCRIBE YOUR EMITONS BLOCK **/
+  .form__emoji {
+    width: 940px; }
+  .form__emoji .form__wrapper {
+    width: 940px; }
+  .form__emoji .form__textarea {
+    height: 128px; }
+  .form__send {
+    width: 940px; }
+  .form__send .form__wrapper {
+    width: 940px; }
+  .form__send .form__info {
+    margin-left: 435px; } }
+
+@-moz-document url-prefix() {
+  @media (min-width: 1200px) {
+    .form__fieldset--app .form__legend {
+      box-sizing: content-box;
+      width: 368px;
+      padding: 0;
+      margin-bottom: 50px;
+      margin-top: 50px; }
+    .form__fieldset--app {
+      margin-top: -60px; } } }
 
 .modal {
   width: 320px;
