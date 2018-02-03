@@ -3115,7 +3115,22 @@ input[value=contrast]:checked ~ .filter__controls
   .form__fieldset--app {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 439px; } }
+    width: 439px;
+    margin-top: -10px; }
+  .form__fieldset--app .form__legend {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    width: 368px;
+    padding: 0;
+    margin-bottom: 50px; }
+  .form__address {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 940px; }
+  .form__fieldset--address {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 940px; } }
 
 .modal {
   width: 320px;

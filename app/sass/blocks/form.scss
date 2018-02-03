@@ -452,5 +452,24 @@
 	.form__fieldset--app{
 		box-sizing: border-box;
 		width: 439px;
+		margin-top: -10px;
+	}
+
+	.form__fieldset--app .form__legend{
+		box-sizing: content-box;
+		width: 368px;
+
+		padding: 0;
+		margin-bottom: 50px;
+	}
+
+	.form__address{
+		box-sizing: border-box;
+		width: 940px;
+	}
+
+	.form__fieldset--address{
+		box-sizing: border-box;
+		width: 940px;
 	}
 }
