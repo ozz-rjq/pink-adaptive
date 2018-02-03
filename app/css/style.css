@@ -3111,18 +3111,25 @@ input[value=contrast]:checked ~ .filter__controls
   .form__app {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 439px; }
+    width: 435px;
+    margin-left: 30px; }
+  .form__app .form__wrapper {
+    width: 435px; }
   .form__fieldset--app {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 439px;
-    margin-top: -10px; }
+    margin-top: -10px;
+    padding-right: 0;
+    padding-left: 0; }
   .form__fieldset--app .form__legend {
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
     width: 368px;
     padding: 0;
     margin-bottom: 50px; }
+  .form__fieldset--app .form__group {
+    margin-left: 74px; }
   .form__address {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -3130,7 +3137,68 @@ input[value=contrast]:checked ~ .filter__controls
   .form__fieldset--address {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 940px; } }
+    width: 940px; }
+  .form__address--flex-desktop {
+    width: 820px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .form__wrap--reverse {
+    width: 375px; }
+  /**  ACHIEVEMENTS  **/
+  .form__achievements {
+    width: 940px; }
+  .form__achievements .form__wrapper {
+    width: 940px; }
+  .form__achievements--flex-desktop {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .form__achievements .form__group:nth-child(1) {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1; }
+  .form__achievements .form__group:nth-child(2) {
+    -webkit-box-ordinal-group: 5;
+    -webkit-order: 4;
+        -ms-flex-order: 4;
+            order: 4; }
+  .form__achievements .form__group:nth-child(3) {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; }
+  .form__achievements .form__group:nth-child(4) {
+    -webkit-box-ordinal-group: 6;
+    -webkit-order: 5;
+        -ms-flex-order: 5;
+            order: 5; }
+  .form__achievements .form__group:nth-child(5) {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3; }
+  .form__achievements .form__group:nth-child(6) {
+    -webkit-box-ordinal-group: 7;
+    -webkit-order: 6;
+        -ms-flex-order: 6;
+            order: 6; }
+  .form__achievements .form__group--wide {
+    width: 315px; }
+  .form__achievements .form__group--normal {
+    width: 295px; }
+  .form__achievements label {
+    padding-left: 60px; } }
 
 .modal {
   width: 320px;

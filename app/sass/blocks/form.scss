@@ -446,13 +446,20 @@
 
 	.form__app{
 		box-sizing: border-box;
-		width: 439px;
+		width: 435px;
+		margin-left: 30px;
+	}
+
+	.form__app .form__wrapper{
+		width: 435px;
 	}
 
 	.form__fieldset--app{
 		box-sizing: border-box;
 		width: 439px;
 		margin-top: -10px;
+		padding-right: 0;
+		padding-left: 0;
 	}
 
 	.form__fieldset--app .form__legend{
@@ -461,6 +468,10 @@
 
 		padding: 0;
 		margin-bottom: 50px;
+	}
+
+	.form__fieldset--app  .form__group{
+		margin-left: 74px;
 	}
 
 	.form__address{
@@ -472,4 +483,68 @@
 		box-sizing: border-box;
 		width: 940px;
 	}
+
+	.form__address--flex-desktop{
+		width: 820px;
+
+		display: flex;
+		justify-content:space-between;
+	}
+
+	.form__wrap--reverse{
+		width: 375px;
+	}
+
+	/**  ACHIEVEMENTS  **/
+
+	.form__achievements{
+		width: 940px;
+	}
+
+	.form__achievements .form__wrapper{
+		width: 940px;
+	}
+
+	.form__achievements--flex-desktop{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.form__achievements .form__group:nth-child(1){
+		order: 1;
+	}
+
+	.form__achievements .form__group:nth-child(2){
+		order: 4;
+	}
+
+	.form__achievements .form__group:nth-child(3){
+		order: 2;
+	}
+
+	.form__achievements .form__group:nth-child(4){
+		order: 5;
+	}
+
+	.form__achievements .form__group:nth-child(5){
+		order: 3;
+	}
+
+	.form__achievements .form__group:nth-child(6){
+		order: 6;
+	}
+
+	.form__achievements .form__group--wide{
+		width: 315px;
+	}
+
+	.form__achievements .form__group--normal{
+		width: 295px;
+	}
+
+	.form__achievements label{
+		padding-left: 60px;
+	}
+
+
 }

@@ -21,7 +21,7 @@
         </a>
         <button class="main-nav__toggle  main-nav__toggle--close">Открыть меню</button>
       </div>
-      
+
       <ul class="main-nav__list  main-nav__list--display">
         <li class="main-nav__item">
           <a class="main-nav__link" href="index.html">Главная</a>
@@ -76,29 +76,37 @@
         <div class="form__wrapper">
           <fieldset class="form__fieldset">
             <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
-            <div class="form__group">
-              <input class="form__checkbox" type="checkbox" name="achievement" value="shark" id="achieve-1" checked>
-              <label for="achieve-1">Сделал селфи с акулой</label>
-            </div>
-            <div class="form__group">
-              <input class="form__checkbox" type="checkbox" name="achievement" value="beach" id="achieve-2" checked>
-              <label for="achieve-2">Обгорел на пляже</label>
-            </div>
-            <div class="form__group">
-              <input class="form__checkbox" type="checkbox" name="achievement" value="chack" id="achieve-3">
-              <label for="achieve-3">Видел Чака Норриса</label>
-            </div>
-            <div class="form__group">
-              <input class="form__checkbox" type="checkbox" name="achievement" value="souvenirs" id="achieve-4">
-              <label for="achieve-4">Накупил сувениров</label>
-            </div>
-            <div class="form__group">
-              <input class="form__checkbox" type="checkbox" name="achievement" value="tower" id="achieve-5" checked>
-              <label for="achieve-5">Удержал башню</label>
-            </div>
-            <div class="form__group">
-              <input class="form__checkbox" type="checkbox" name="achievement" value="hotel" id="achieve-6">
-              <label for="achieve-6">Разгромил отель</label>
+
+            <div class="form__achievements--flex-desktop">
+              <div class="form__group  form__group--wide">
+                <input class="form__checkbox" type="checkbox" name="achievement" value="shark" id="achieve-1" checked>
+                <label for="achieve-1">Сделал селфи с акулой</label>
+              </div>
+
+              <div class="form__group  form__group--wide">
+                <input class="form__checkbox" type="checkbox" name="achievement" value="beach" id="achieve-2" checked>
+                <label for="achieve-2">Обгорел на пляже</label>
+              </div>
+
+              <div class="form__group  form__group--normal">
+                <input class="form__checkbox" type="checkbox" name="achievement" value="chack" id="achieve-3">
+                <label for="achieve-3">Видел Чака Норриса</label>
+              </div>
+
+              <div class="form__group  form__group--normal">
+                <input class="form__checkbox" type="checkbox" name="achievement" value="souvenirs" id="achieve-4">
+                <label for="achieve-4">Накупил сувениров</label>
+              </div>
+
+              <div class="form__group">
+                <input class="form__checkbox" type="checkbox" name="achievement" value="tower" id="achieve-5" checked>
+                <label for="achieve-5">Удержал башню</label>
+              </div>
+
+              <div class="form__group">
+                <input class="form__checkbox" type="checkbox" name="achievement" value="hotel" id="achieve-6">
+                <label for="achieve-6">Разгромил отель</label>
+              </div>
             </div>
           </fieldset>
         </div>
@@ -107,13 +115,17 @@
       <div class="form__wrapper  form__address">
         <fieldset class="form__fieldset  form__fieldset--address">
           <legend class="form__legend  form__legend--hidden">Контактная информация</legend>
-          <div class="form__wrap  form__wrap--reverse">
-            <label class="form__label" for="phone">Номер телефона</label>
-            <input class="form__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста"><span class="form__icon"></span>
-          </div>
-          <div class="form__wrap  form__wrap--reverse">
-            <label class="form__label" for="email">Адрес почты</label>
-            <input class="form__input" type="email" name="email" id="email" placeholder="Введите почту *"><span class="form__icon"></span>
+
+          <div class="form__address--flex-desktop">
+            <div class="form__wrap  form__wrap--reverse">
+              <label class="form__label" for="phone">Номер телефона</label>
+              <input class="form__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста"><span class="form__icon"></span>
+            </div>
+
+            <div class="form__wrap  form__wrap--reverse">
+              <label class="form__label" for="email">Адрес почты</label>
+              <input class="form__input" type="email" name="email" id="email" placeholder="Введите почту *"><span class="form__icon"></span>
+            </div>
           </div>
         </fieldset>
       </div>
@@ -124,14 +136,17 @@
             <legend class="form__legend">
               С каким приложением путешествовали?
             </legend>
+
             <div class="form__group">
               <input class="form__radio" type="radio" name="os" value="ios" id="ios">
               <label for="ios">Pink для iOS</label>
             </div>
+
             <div class="form__group">
               <input class="form__radio" type="radio" name="os" value="android" id="android">
               <label for="android">Pink на Android</label>
             </div>
+
             <div class="form__group">
               <input class="form__radio" type="radio" name="os" value="windows" id="windows">
               <label for="windows">Windows Phone</label>
