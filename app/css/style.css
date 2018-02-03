@@ -3084,6 +3084,14 @@ input[value=contrast]:checked ~ .filter__controls
             border-top-right-radius: 2px;
     -webkit-border-bottom-right-radius: 2px;
             border-bottom-right-radius: 2px; }
+    .form__wrap--reverse .form__icon--phone {
+      background-image: url("../../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-position: 18px 20px; }
+    .form__wrap--reverse .form__icon--mail {
+      background-image: url("../../img/icon-mail.svg");
+      background-repeat: no-repeat;
+      background-position: 20px 22px; }
   .form__emoji .form__legend {
     padding-bottom: 33px; }
   .form__textarea {
