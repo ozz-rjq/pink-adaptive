@@ -3207,7 +3207,8 @@ input[value=contrast]:checked ~ .filter__controls
   .form__emoji .form__textarea {
     height: 128px; }
   .form__send {
-    width: 940px; }
+    width: 940px;
+    margin-bottom: 0; }
   .form__send .form__wrapper {
     width: 940px; }
   .form__send .form__info {
