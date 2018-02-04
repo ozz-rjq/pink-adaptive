@@ -6,9 +6,18 @@
 	background: url("../img/iphone-screen-mobile@1x.png"), 
 	  linear-gradient(-6deg, #f2f2f2 0%, 
 		#f2f2f2 75%, #fff 75%	);
-
 	background-repeat: no-repeat;
 	background-position: bottom center;
+
+	@media (min-resolution: $retina-dpi),
+		(min-resolution: $retina-dppx){
+			background: url("../img/iphone-screen-mobile@2x.png"),
+				linear-gradient(-6deg, #f2f2f2 0%, 
+	  		#f2f2f2 75%, #fff 75%	);
+			background-repeat: no-repeat;
+			background-position: bottom center;
+			background-size: 157px 258px, 100%;
+		}
 }
 
 .offers__wrapper{
