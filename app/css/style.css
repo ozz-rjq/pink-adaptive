@@ -2041,17 +2041,26 @@ a.contacts__field:active {
   background-position: center center;
   -webkit-background-size: cover;
           background-size: cover; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .map {
+      background-image: url("../img/bg-map-mobile@2x.jpg"); } }
 
 @media (min-width: 660px) {
   .map {
     height: 373px;
     margin-top: 0;
     background-image: url("../img/bg-map-tablet@1x.jpg"); } }
+  @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+    .map {
+      background-image: url("../img/bg-map-tablet@2x.jpg"); } }
 
 @media (min-width: 1200px) {
   .map {
     height: 502px;
     background-image: url("../img/bg-map-desktop@1x.jpg"); } }
+  @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+    .map {
+      background-image: url("../img/bg-map-desktop@2x.jpg"); } }
 
 .page-footer {
   width: 100%;

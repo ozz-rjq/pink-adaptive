@@ -14,7 +14,7 @@ window.onload = function () {
 	var marker = new google.maps.Marker({
 		position: {lat: 59.719504, lng: 30.417335},
 		map: myMap,
-		icon: "img/map-marker.png"
+		icon: "../img/icon-map-marker.svg"
 	});
 
 	var infoWindow = new google.maps.InfoWindow({
