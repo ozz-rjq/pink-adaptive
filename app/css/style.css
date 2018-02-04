@@ -3250,7 +3250,7 @@ input[value=contrast]:checked ~ .filter__controls
 
 .modal--failure {
   position: fixed;
-  top: 30%;
+  top: 10%;
   left: 50%;
   z-index: 10; }
 
@@ -3311,6 +3311,8 @@ input[value=contrast]:checked ~ .filter__controls
     margin-left: 80px; } }
 
 @media (min-width: 1200px) {
+  .modal--failure {
+    top: 20%; }
   .modal--success {
     top: 20%;
     width: 780px;
