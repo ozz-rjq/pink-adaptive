@@ -3332,7 +3332,8 @@ input[value=contrast]:checked ~ .filter__controls
       width: 368px;
       padding: 0;
       margin-bottom: 50px;
-      margin-top: 50px; }
+      margin-top: 50px;
+      padding-left: 20px; }
     .form__fieldset--app {
       margin-top: -60px; } } }
 
