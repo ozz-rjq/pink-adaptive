@@ -1593,15 +1593,15 @@ label[for=reviews-slide-3] {
   vertical-align: top;
   width: 32px;
   height: 32px;
-  background-color: rgba(255, 0, 0, 0.3);
   background-image: url("../img/icon-no.svg");
   background-repeat: no-repeat;
-  -webkit-background-size: 100% 100%;
-          background-size: 100%; }
+  -webkit-background-size: 27px 26px;
+          background-size: 27px 26px; }
   .rates__option-has.rates__options-has--yes {
-    background-color: rgba(0, 128, 0, 0.4);
-    background-image: url("../img/icon-yes.svg");
-    background-repeat: no-repeat; }
+    background-image: url("../img/icon-yes-green.svg");
+    background-repeat: no-repeat;
+    -webkit-background-size: 31px 21px;
+            background-size: 31px 21px; }
 
 .rates__controls {
   position: absolute;
@@ -1737,7 +1737,8 @@ label[for=rates-slide-3] {
     font-size: 14px;
     line-height: 30px; }
   .rates__option-has {
-    margin: 0 auto; }
+    margin: 0 auto;
+    background-position: 0 2px; }
   .rates__option-title {
     position: absolute !important;
     height: 1px;

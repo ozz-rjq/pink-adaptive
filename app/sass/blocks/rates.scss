@@ -144,15 +144,14 @@
 	width: 32px;
 	height: 32px;
 
-	background-color: rgba(red, 0.3);
 	background-image: url("../img/icon-no.svg");
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 27px 26px;
 
 	&.rates__options-has--yes{
-		background-color: rgba(green, 0.4);
-		background-image: url("../img/icon-yes.svg");
+		background-image: url("../img/icon-yes-green.svg");
 		background-repeat: no-repeat;
+		background-size: 31px 21px;
 	}
 }
 
@@ -329,6 +328,8 @@
 
 	.rates__option-has{
 		margin: 0 auto;
+		
+		background-position: 0 2px;
 	}
 
 	.rates__option-title{
