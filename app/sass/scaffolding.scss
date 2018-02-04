@@ -1,6 +1,39 @@
-body{
-	margin: 0 auto;
+@font-face {
+  font-family: "Open Sans";
+  src:
+    local("Open Sans"),
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
 
+@font-face {
+  font-family: "Open Sans";
+  src:
+    local("Open Sans Bold"),
+    url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    local("Open Sans Light"),
+    url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+}
+
+body{
+	width: 100%;
+	
 	font-family: $open-sans;
 	font-size: 14px;
 	line-height: 30px;
