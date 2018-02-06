@@ -2,18 +2,18 @@
 	width: 100%;
 }
 
-.form__wide{
+.form__wrapper{
 	width: 100%;
+}
+
+.form__achievements,
+.form__app{
 	background-color: #f2f2f2;
 }
 
-.form__wrapper{
+.form__fieldset{
 	width: 280px;
 	margin: 0 auto;
-}
-
-.form__fieldset{
-	margin: 0;
 	padding: 0;
 	border: none;
 }
@@ -256,6 +256,11 @@
 		flex-wrap: wrap;
 	}
 
+	.form__wrapper{
+		width: 620px;
+		margin: 0 auto;
+	}
+
 	//change blocks order
 
 	.form__general{
@@ -284,8 +289,9 @@
 
 	//set initial params
 
-	.form__wrapper{
-		width: 620px;
+	.form__achievements,
+	.form__app{
+		background-color: #fff;
 	}
 
 	.form__wrap{
@@ -315,38 +321,24 @@
 		flex-grow: 2;
 	}
 
-	.form__wide{
-		background-color: #fff;
-	}
-
 	//set main fieldset properties
 
 	.form__fieldset{
+		box-sizing: border-box;
+		width: 620px;
+		padding-left: 58px;
+		padding-right: 58px;
+		
 		border: 2px solid #e5e5e5;
 	}
 
-	.form__general .form__fieldset{
+	.form__general .form__fieldset,
+	.form__send .form__fieldset{
+		padding: 0;
 		border: none;
 	}
 
-	.form__send .form__fieldset{
-		border: none;
-	}
-
-	.form__fieldset{
-		padding-left: 58px;
-		padding-right: 58px;
-	}
-
-	.form__general .form__fieldset{
-		padding: 0;
-	}
-
-	.form__send .form__fieldset{
-		padding: 0;
-	}
-
-	.form__fieldset--address{
+	.form__address .form__fieldset{
 		margin-top: 0;
 	}
 
@@ -427,12 +419,6 @@
 		margin-bottom: 20px;
 	}
 
-	.form__fieldset--send{
-		//display: flex;
-		//flex-wrap: nowrap;
-		//justify-content: space-between;
-	}
-
 	.form__submit{
 		width: 300px;
 	}
@@ -457,25 +443,24 @@
 		margin-right: 40px;
 	}
 
+	.form__general  .form__fieldset{
+		width: 435px;
+	}
+
 	.form__app{
 		box-sizing: border-box;
 		width: 435px;
 		margin-left: 30px;
 	}
 
-	.form__app .form__wrapper{
+	.form__app .form__fieldset{
 		width: 435px;
-	}
-
-	.form__fieldset--app{
-		box-sizing: border-box;
-		width: 439px;
 		margin-top: -10px;
 		padding-right: 0;
 		padding-left: 0;
 	}
 
-	.form__fieldset--app .form__legend{
+	.form__app .form__legend{
 		box-sizing: content-box;
 		width: 368px;
 
@@ -483,7 +468,7 @@
 		margin-bottom: 50px;
 	}
 
-	.form__fieldset--app  .form__group{
+	.form__app  .form__group{
 		margin-left: 74px;
 	}
 
@@ -492,7 +477,7 @@
 		width: 940px;
 	}
 
-	.form__fieldset--address{
+	.form__address .form__fieldset{
 		box-sizing: border-box;
 		width: 940px;
 	}
@@ -514,7 +499,7 @@
 		width: 940px;
 	}
 
-	.form__achievements .form__wrapper{
+	.form__achievements .form__fieldset{
 		width: 940px;
 	}
 
@@ -565,7 +550,7 @@
 		width: 940px;
 	}
 
-	.form__emoji .form__wrapper{
+	.form__emoji .form__fieldset{
 		width: 940px;
 	}
 
@@ -580,7 +565,7 @@
 		margin-bottom: 0;
 	}
 
-	.form__send .form__wrapper{
+	.form__send .form__fieldset{
 		width: 940px;
 	}
 

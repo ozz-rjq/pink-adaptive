@@ -2872,16 +2872,16 @@ input[value=contrast]:checked ~ .filter__controls
 .form {
   width: 100%; }
 
-.form__wide {
-  width: 100%;
+.form__wrapper {
+  width: 100%; }
+
+.form__achievements,
+.form__app {
   background-color: #f2f2f2; }
 
-.form__wrapper {
-  width: 280px;
-  margin: 0 auto; }
-
 .form__fieldset {
-  margin: 0;
+  width: 280px;
+  margin: 0 auto;
   padding: 0;
   border: none; }
 
@@ -3078,6 +3078,9 @@ input[value=contrast]:checked ~ .filter__controls
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
+  .form__wrapper {
+    width: 620px;
+    margin: 0 auto; }
   .form__general {
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
@@ -3108,8 +3111,9 @@ input[value=contrast]:checked ~ .filter__controls
     -webkit-order: 6;
         -ms-flex-order: 6;
             order: 6; }
-  .form__wrapper {
-    width: 620px; }
+  .form__achievements,
+  .form__app {
+    background-color: #fff; }
   .form__wrap {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3131,22 +3135,18 @@ input[value=contrast]:checked ~ .filter__controls
     -webkit-flex-grow: 2;
         -ms-flex-positive: 2;
             flex-grow: 2; }
-  .form__wide {
-    background-color: #fff; }
   .form__fieldset {
-    border: 2px solid #e5e5e5; }
-  .form__general .form__fieldset {
-    border: none; }
-  .form__send .form__fieldset {
-    border: none; }
-  .form__fieldset {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 620px;
     padding-left: 58px;
-    padding-right: 58px; }
-  .form__general .form__fieldset {
-    padding: 0; }
+    padding-right: 58px;
+    border: 2px solid #e5e5e5; }
+  .form__general .form__fieldset,
   .form__send .form__fieldset {
-    padding: 0; }
-  .form__fieldset--address {
+    padding: 0;
+    border: none; }
+  .form__address .form__fieldset {
     margin-top: 0; }
   .form__legend {
     width: auto;
@@ -3219,33 +3219,31 @@ input[value=contrast]:checked ~ .filter__controls
     width: 435px;
     margin: 0;
     margin-right: 40px; }
+  .form__general .form__fieldset {
+    width: 435px; }
   .form__app {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 435px;
     margin-left: 30px; }
-  .form__app .form__wrapper {
-    width: 435px; }
-  .form__fieldset--app {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    width: 439px;
+  .form__app .form__fieldset {
+    width: 435px;
     margin-top: -10px;
     padding-right: 0;
     padding-left: 0; }
-  .form__fieldset--app .form__legend {
+  .form__app .form__legend {
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
     width: 368px;
     padding: 0;
     margin-bottom: 50px; }
-  .form__fieldset--app .form__group {
+  .form__app .form__group {
     margin-left: 74px; }
   .form__address {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 940px; }
-  .form__fieldset--address {
+  .form__address .form__fieldset {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 940px; }
@@ -3264,7 +3262,7 @@ input[value=contrast]:checked ~ .filter__controls
   /**  ACHIEVEMENTS  **/
   .form__achievements {
     width: 940px; }
-  .form__achievements .form__wrapper {
+  .form__achievements .form__fieldset {
     width: 940px; }
   .form__achievements--flex-desktop {
     display: -webkit-box;
@@ -3313,14 +3311,14 @@ input[value=contrast]:checked ~ .filter__controls
   /** DESCRIBE YOUR EMITONS BLOCK **/
   .form__emoji {
     width: 940px; }
-  .form__emoji .form__wrapper {
+  .form__emoji .form__fieldset {
     width: 940px; }
   .form__emoji .form__textarea {
     height: 128px; }
   .form__send {
     width: 940px;
     margin-bottom: 0; }
-  .form__send .form__wrapper {
+  .form__send .form__fieldset {
     width: 940px; }
   .form__send .form__info {
     margin-left: 435px; } }
