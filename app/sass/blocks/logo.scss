@@ -15,6 +15,9 @@
 	fill: $pink;
 }
 
+.logo[href]:active .logo--mobile{
+	fill: rgba(#fff, 0.3);
+}
 
 @media (min-width: $tablet-width){
 	.logo--mobile{
@@ -28,6 +31,10 @@
 
 	.logo[href]:hover .logo--tablet{
 		fill: $pink;
+	}
+
+	.logo[href]:active .logo--tablet{
+		fill: rgba(#fff, 0.3);
 	}
 }
 
@@ -43,5 +50,9 @@
 
 	.logo[href]:hover .logo--desktop{
 		fill: $pink;
+	}
+
+	.logo[href]:active .logo--desktop{
+		fill: rgba(#fff, 0.3);
 	}
 }

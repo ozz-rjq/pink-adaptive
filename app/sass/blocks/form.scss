@@ -579,18 +579,28 @@
 @-moz-document url-prefix() {
 	@media (min-width: $desktop-width){
 
+		.form__fieldset--app{
+			position: relative;
+		}
+
 		 .form__fieldset--app .form__legend{
+		 	position: absolute;
+		 	top: -60px;
+		 	left: 20px;
+		 	z-index: 10;
+
 			box-sizing: content-box;
-			width: 368px;
+			width: 358px;
 
 			padding: 0;
 			margin-bottom: 50px;
 			margin-top: 50px;
-			padding-left: 20px;
+
+			background-color: #fff;
 		}
 
-		.form__fieldset--app{
-			margin-top: -60px;
+		.form__app .form__fieldset{
+			padding-top: 65px;
 		}
 	}
 }

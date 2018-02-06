@@ -473,6 +473,9 @@ body {
 .logo[href]:hover .logo--mobile {
   fill: #d22856; }
 
+.logo[href]:active .logo--mobile {
+  fill: rgba(255, 255, 255, 0.3); }
+
 @media (min-width: 660px) {
   .logo--mobile {
     display: none; }
@@ -480,7 +483,9 @@ body {
     display: block;
     fill: #fff; }
   .logo[href]:hover .logo--tablet {
-    fill: #d22856; } }
+    fill: #d22856; }
+  .logo[href]:active .logo--tablet {
+    fill: rgba(255, 255, 255, 0.3); } }
 
 @media (min-width: 1200px) {
   .logo--tablet {
@@ -489,7 +494,9 @@ body {
     display: inline-block;
     fill: #fff; }
   .logo[href]:hover .logo--desktop {
-    fill: #d22856; } }
+    fill: #d22856; }
+  .logo[href]:active .logo--desktop {
+    fill: rgba(255, 255, 255, 0.3); } }
 
 .main-nav {
   width: 100%; }
@@ -3361,15 +3368,21 @@ input[value=contrast]:checked ~ .filter__controls
 
 @-moz-document url-prefix() {
   @media (min-width: 1200px) {
+    .form__fieldset--app {
+      position: relative; }
     .form__fieldset--app .form__legend {
+      position: absolute;
+      top: -60px;
+      left: 20px;
+      z-index: 10;
       box-sizing: content-box;
-      width: 368px;
+      width: 358px;
       padding: 0;
       margin-bottom: 50px;
       margin-top: 50px;
-      padding-left: 20px; }
-    .form__fieldset--app {
-      margin-top: -60px; } } }
+      background-color: #fff; }
+    .form__app .form__fieldset {
+      padding-top: 65px; } } }
 
 .modal {
   width: 320px;
