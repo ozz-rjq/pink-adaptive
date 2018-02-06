@@ -1,0 +1,47 @@
+.logo{
+	max-height: 40px;
+}
+
+.logo--tablet,
+.logo--desktop{
+	display: none;
+}
+
+.logo--mobile{
+	fill: #fff;
+}
+
+.logo[href]:hover .logo--mobile{
+	fill: $pink;
+}
+
+
+@media (min-width: $tablet-width){
+	.logo--mobile{
+		display: none;
+	}
+
+	.logo--tablet{
+		display: block;
+		fill: #fff;
+	}
+
+	.logo[href]:hover .logo--tablet{
+		fill: $pink;
+	}
+}
+
+@media (min-width: $desktop-width){
+	.logo--tablet{
+		display: none;
+	}
+
+	.logo--desktop{
+		display: inline-block;
+		fill: #fff;
+	}
+
+	.logo[href]:hover .logo--desktop{
+		fill: $pink;
+	}
+}

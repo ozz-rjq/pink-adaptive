@@ -32,10 +32,6 @@
   }
 }
 
-.main-nav__logo {
-  margin-top: 22px;
-}
-
 .main-nav__toggle {
   position: absolute;
   top: 20px;
@@ -197,10 +193,6 @@
 @media (min-width: $tablet-width) {
   .main-nav {}
 
-  .main-nav__logo {
-    margin-top: 27px;
-  }
-
   .main-nav__header {
     min-height: 110px;
     padding: 0 20px;
@@ -231,8 +223,8 @@
     background-color: transparent;
   }
 
-  .main-nav__logo {
-    //width: 150px;
+  .main-nav__header--opened::after{
+    display: none;
   }
 
   .main-nav__toggle {
