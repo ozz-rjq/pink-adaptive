@@ -1109,42 +1109,16 @@ body {
             box-sizing: border-box;
     width: 620px;
     margin: 0 auto;
-    background-image: url("../img/iphone-screen-1-tablet@1x.png");
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: bottom left; } }
   @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
     .offers__wrapper {
-      background-image: url("../img/iphone-screen-1-tablet@2x.png");
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
       background-repeat: no-repeat;
       background-position: bottom left;
       -webkit-background-size: 268px 481px;
               background-size: 268px 481px; } }
-
-@media (min-width: 660px) {
-    .offers__wrapper:hover {
-      background-image: url("../img/iphone-screen-2-tablet@1x.png");
-      background-position: bottom left;
-      background-repeat: no-repeat; } }
-    @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
-      .offers__wrapper:hover {
-        background-image: url("../img/iphone-screen-2-tablet@2x.png");
-        background-repeat: no-repeat;
-        background-position: bottom left;
-        -webkit-background-size: 268px 481px;
-                background-size: 268px 481px; } }
-
-@media (min-width: 660px) {
-    .offers__wrapper:active {
-      background-image: url("../img/iphone-screen-3-tablet@1x.png");
-      background-position: bottom left;
-      background-repeat: no-repeat; } }
-    @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
-      .offers__wrapper:active {
-        background-image: url("../img/iphone-screen-3-tablet@2x.png");
-        background-repeat: no-repeat;
-        background-position: bottom left;
-        -webkit-background-size: 268px 481px;
-                background-size: 268px 481px; } }
 
 @media (min-width: 660px) {
   .offers__header {
