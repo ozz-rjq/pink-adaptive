@@ -1251,7 +1251,7 @@ body {
 
 @media (min-width: 1200px) {
   .offers__title {
-    width: 250px;
+    width: 230px;
     margin: 0 auto;
     margin-bottom: 23px;
     font-size: 30px;
@@ -1290,7 +1290,7 @@ body {
     display: block;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    margin-top: 98px;
+    margin-top: 110px;
     width: 202px;
     height: 202px;
     font-size: 96px;
@@ -1301,17 +1301,32 @@ body {
     border: 13px solid #d22856;
     -webkit-border-radius: 50%;
             border-radius: 50%; }
+    .effect__timer::before {
+      content: "";
+      position: absolute;
+      top: -13px;
+      left: -13px;
+      z-index: 5;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      width: 202px;
+      height: 202px;
+      border: 13px solid #d22856;
+      -webkit-border-radius: 50%;
+              border-radius: 50%; }
     .effect__timer::after {
       content: "";
       position: absolute;
-      top: -92px;
-      left: -50px;
-      width: 280px;
-      height: 350px;
+      top: -69px;
+      left: -31px;
+      z-index: 1;
+      width: 238px;
+      height: 276px;
       background-image: url("../img/icon-timer.svg");
-      -webkit-background-size: 276px 316px;
-              background-size: 276px 316px;
-      background-repeat: no-repeat; }
+      -webkit-background-size: 100% 100%;
+              background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: left; }
   .effect__title {
     width: 180px;
     margin-top: 98px;
@@ -1349,17 +1364,21 @@ body {
   .effect__timer {
     width: 253px;
     height: 253px;
-    margin-top: 105px;
+    margin-top: 80px;
     font-size: 120px;
     line-height: 225px;
     border-width: 16px; }
+    .effect__timer::before {
+      top: -16px;
+      left: -16px;
+      width: 253px;
+      height: 253px;
+      border: 16px solid #d22856; }
     .effect__timer::after {
-      top: -113px;
-      left: -61px;
-      width: 343px;
-      height: 394px;
-      -webkit-background-size: 343px 394px;
-              background-size: 343px 394px; }
+      top: -86px;
+      left: -38px;
+      width: 300px;
+      height: 345px; }
   .effect__title {
     width: 100%;
     margin-top: 95px;
