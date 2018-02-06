@@ -621,12 +621,13 @@ body {
   .main-nav__link:active {
     color: rgba(210, 40, 86, 0.3); }
 
-.main-nav__link--active:hover {
-  cursor: default;
-  color: #fff; }
-
-.main-nav__link--active:active {
-  color: #fff; }
+.main-nav__link--active {
+  color: rgba(210, 40, 86, 0.7); }
+  .main-nav__link--active:hover {
+    cursor: default;
+    color: rgba(210, 40, 86, 0.7); }
+  .main-nav__link--active:active {
+    color: rgba(210, 40, 86, 0.7); }
 
 @media (min-width: 660px) {
   .main-nav__header {
@@ -688,9 +689,11 @@ body {
     .main-nav__link:active {
       color: rgba(255, 255, 255, 0.3); }
   .main-nav__link--active {
-    position: relative; }
+    position: relative;
+    color: #fff; }
     .main-nav__link--active:hover {
-      cursor: default; }
+      cursor: default;
+      color: #fff; }
     .main-nav__link--active:active {
       color: #fff; }
     .main-nav__link--active::before {

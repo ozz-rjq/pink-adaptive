@@ -180,13 +180,15 @@
 }
 
 .main-nav__link--active {
+  color: rgba($pink, 0.7);
+
   &:hover {
     cursor: default;
-    color: #fff;
+    color: rgba($pink, 0.7);
   }
 
   &:active {
-    color: #fff;
+    color: rgba($pink, 0.7);
   }
 }
 
@@ -271,8 +273,11 @@
   .main-nav__link--active {
     position: relative;
 
+    color: #fff;
+
     &:hover {
       cursor: default;
+      color: #fff;
     }
 
     &:active {
