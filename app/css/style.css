@@ -461,6 +461,7 @@ body {
     margin: 0 auto; } }
 
 .logo {
+  display: inline-block;
   max-height: 40px; }
 
 .logo--tablet,
@@ -475,6 +476,18 @@ body {
 
 .logo[href]:active .logo--mobile {
   fill: rgba(255, 255, 255, 0.3); }
+
+.logo__footer--great {
+  display: none; }
+
+.logo__footer--small {
+  fill: #283645; }
+
+.logo[href]:hover .logo__footer--small {
+  fill: #d22856; }
+
+.logo[href]:active .logo__footer--small {
+  fill: rgba(0, 0, 0, 0.3); }
 
 @media (min-width: 660px) {
   .logo--mobile {
@@ -496,7 +509,16 @@ body {
   .logo[href]:hover .logo--desktop {
     fill: #d22856; }
   .logo[href]:active .logo--desktop {
-    fill: rgba(255, 255, 255, 0.3); } }
+    fill: rgba(255, 255, 255, 0.3); }
+  .logo__footer--small {
+    display: none; }
+  .logo__footer--great {
+    display: block;
+    fill: #283645; }
+  .logo[href]:hover .logo__footer--great {
+    fill: #d22856; }
+  .logo[href]:active .logo__footer--great {
+    fill: rgba(0, 0, 0, 0.3); } }
 
 .main-nav {
   width: 100%; }
@@ -737,7 +759,10 @@ body {
   border: 3px solid #e9ebec;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  -webkit-transition: border-color 0.5s;
+  -o-transition: border-color 0.5s;
+  transition: border-color 0.5s; }
   .social__link--twitter {
     background-image: url("../img/logo-icon-twitter.svg");
     background-position: 14px 16px; }
@@ -1155,10 +1180,6 @@ body {
     width: 1200px;
     margin: 0 auto;
     background-image: none; }
-    .offers__wrapper:hover {
-      background-image: none; }
-    .offers__wrapper:active {
-      background-image: none; }
   .offers__header {
     padding-top: 72px;
     padding-bottom: 70px; }
@@ -2103,7 +2124,7 @@ a.contacts__field:active {
 .page-footer {
   width: 100%;
   background-color: #fff; }
-  .page-footer--mobile-hide {
+  .page-footer--mobile-hidden {
     display: none; }
 
 .page-footer__wrapper {
@@ -2141,14 +2162,23 @@ a.contacts__field:active {
     line-height: 18px;
     font-weight: 400;
     color: #283645; }
-  .page-footer__copyright img {
-    vertical-align: middle; }
+  .page-footer__copyright a {
+    display: inline-block;
+    height: 34px; }
+
+.page-footer__html {
+  fill: #d22856; }
+  .page-footer__html:hover {
+    cursor: pointer;
+    fill: #283645; }
+  .page-footer__html:active {
+    fill: rgba(40, 54, 69, 0.3); }
 
 @media (min-width: 660px) {
   .page-footer {
     width: 100%;
     background-color: #fff; }
-    .page-footer--mobile-hide {
+    .page-footer--mobile-hidden {
       display: block; }
   .page-footer__wrapper {
     width: 620px;

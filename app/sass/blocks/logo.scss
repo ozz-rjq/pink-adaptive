@@ -1,4 +1,5 @@
 .logo{
+	display: inline-block;
 	max-height: 40px;
 }
 
@@ -17,6 +18,25 @@
 
 .logo[href]:active .logo--mobile{
 	fill: rgba(#fff, 0.3);
+}
+
+
+//FOOTER
+
+.logo__footer--great{
+	display: none;
+}
+
+.logo__footer--small{
+	fill: #283645;
+}
+
+.logo[href]:hover .logo__footer--small{
+	fill: $pink;
+}
+
+.logo[href]:active .logo__footer--small{
+	fill: rgba(#000, 0.3);
 }
 
 @media (min-width: $tablet-width){
@@ -54,5 +74,25 @@
 
 	.logo[href]:active .logo--desktop{
 		fill: rgba(#fff, 0.3);
+	}
+
+
+	//FOOTER
+
+	.logo__footer--small{
+		display: none;
+	}
+
+	.logo__footer--great{
+		display: block;
+		fill: #283645;
+	}
+
+	.logo[href]:hover .logo__footer--great{
+		fill: $pink;
+	}
+
+	.logo[href]:active .logo__footer--great{
+		fill: rgba(#000, 0.3);
 	}
 }

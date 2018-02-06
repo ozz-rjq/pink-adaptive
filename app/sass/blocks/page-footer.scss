@@ -3,7 +3,7 @@
 
 	background-color: #fff;
 
-	&--mobile-hide{
+	&--mobile-hidden{
 		display: none;
 	}
 }
@@ -46,8 +46,22 @@
 		color: #283645;
 	}
 
-	img{
-		vertical-align:middle
+	a{
+		display: inline-block;
+		height: 34px;
+	}
+}
+
+.page-footer__html{
+	fill: $pink;
+
+	&:hover{
+		cursor: pointer;
+		fill: $nav-item-bg;
+	}
+
+	&:active{
+		fill: rgba($nav-item-bg, 0.3);
 	}
 }
 
@@ -57,7 +71,7 @@
 
 		background-color: #fff;
 
-		&--mobile-hide{
+		&--mobile-hidden{
 			display: block;
 		}
 	}

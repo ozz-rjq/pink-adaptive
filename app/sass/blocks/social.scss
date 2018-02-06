@@ -33,6 +33,8 @@
 
 	background-repeat: no-repeat;
 
+	transition: border-color 0.5s;
+
 	&--twitter{
 		background-image: url("../img/logo-icon-twitter.svg");
 		background-position: 14px 16px;
