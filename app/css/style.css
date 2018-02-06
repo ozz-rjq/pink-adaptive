@@ -466,10 +466,16 @@ body {
 
 .logo--tablet,
 .logo--desktop {
-  display: none; }
+  display: none;
+  -webkit-transition: fill 0.25s;
+  -o-transition: fill 0.25s;
+  transition: fill 0.25s; }
 
 .logo--mobile {
-  fill: #fff; }
+  fill: #fff;
+  -webkit-transition: fill 0.25s;
+  -o-transition: fill 0.25s;
+  transition: fill 0.25s; }
 
 .logo[href]:hover .logo--mobile {
   fill: #d22856; }
@@ -478,10 +484,16 @@ body {
   fill: rgba(255, 255, 255, 0.3); }
 
 .logo__footer--great {
-  display: none; }
+  display: none;
+  -webkit-transition: fill 0.25s;
+  -o-transition: fill 0.25s;
+  transition: fill 0.25s; }
 
 .logo__footer--small {
-  fill: #283645; }
+  fill: #283645;
+  -webkit-transition: fill 0.25s;
+  -o-transition: fill 0.25s;
+  transition: fill 0.25s; }
 
 .logo[href]:hover .logo__footer--small {
   fill: #d22856; }
@@ -2167,7 +2179,10 @@ a.contacts__field:active {
     height: 34px; }
 
 .page-footer__html {
-  fill: #d22856; }
+  fill: #d22856;
+  -webkit-transition: fill 0.4s;
+  -o-transition: fill 0.4s;
+  transition: fill 0.4s; }
   .page-footer__html:hover {
     cursor: pointer;
     fill: #283645; }

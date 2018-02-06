@@ -6,10 +6,14 @@
 .logo--tablet,
 .logo--desktop{
 	display: none;
+
+	transition: fill 0.25s;
 }
 
 .logo--mobile{
 	fill: #fff;
+
+	transition: fill 0.25s;
 }
 
 .logo[href]:hover .logo--mobile{
@@ -25,10 +29,14 @@
 
 .logo__footer--great{
 	display: none;
+
+	transition: fill 0.25s;
 }
 
 .logo__footer--small{
 	fill: #283645;
+
+	transition: fill 0.25s;
 }
 
 .logo[href]:hover .logo__footer--small{
