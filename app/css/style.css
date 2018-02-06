@@ -2993,7 +2993,10 @@ input[value=contrast]:checked ~ .filter__controls
   color: #283645;
   border: 2px solid #e5e5e5;
   -webkit-border-radius: 2px;
-          border-radius: 2px; }
+          border-radius: 2px;
+  -webkit-transition: border-color 0.25s;
+  -o-transition: border-color 0.25s;
+  transition: border-color 0.25s; }
   .form__input:hover {
     border-color: #283645; }
   .form__input:focus {
@@ -3043,7 +3046,10 @@ input[value=contrast]:checked ~ .filter__controls
   border: 2px solid #e5e5e5;
   -webkit-border-radius: 2px;
           border-radius: 2px;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: border-color 0.1s;
+  -o-transition: border-color 0.1s;
+  transition: border-color 0.1s; }
 
 .form__group:hover >
 .form__checkbox + label::after {
@@ -3086,7 +3092,10 @@ input[value=contrast]:checked ~ .filter__controls
   border: 2px solid #e5e5e5;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: border-color 0.2s;
+  -o-transition: border-color 0.2s;
+  transition: border-color 0.2s; }
 
 .form__group:hover >
 .form__radio + label::after {
@@ -3130,7 +3139,10 @@ input[value=contrast]:checked ~ .filter__controls
   color: #283645;
   border: 2px solid #e5e5e5;
   -webkit-border-radius: 2px;
-          border-radius: 2px; }
+          border-radius: 2px;
+  -webkit-transition: border-color 0.25s;
+  -o-transition: border-color 0.25s;
+  transition: border-color 0.25s; }
   .form__textarea:hover {
     border-color: #283645; }
   .form__textarea:focus {
