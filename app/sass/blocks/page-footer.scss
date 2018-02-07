@@ -3,7 +3,7 @@
 
 	background-color: #fff;
 
-	&--mobile-hidden{
+	&--index{
 		display: none;
 	}
 }
@@ -73,7 +73,7 @@
 
 		background-color: #fff;
 
-		&--mobile-hidden{
+		&--index{
 			display: block;
 		}
 	}
@@ -110,9 +110,17 @@
 		padding-top: 98px;
 	}
 
+	.page-footer--index .page-footer__wrapper{
+		padding-top: 75px;
+	}
+
 	.page-footer__copyright{
 		margin-top: 15px;
 
 		padding-bottom: 78px;
+	}
+
+	.page-footer--index .page-footer__copyright{
+		padding-bottom: 74px;
 	}
 }
