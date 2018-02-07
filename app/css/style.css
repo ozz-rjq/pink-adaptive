@@ -826,7 +826,8 @@ body {
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat; }
   .like-btn:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    background-image: url("../img/icon-heart-filled.svg"); }
 
 .form-btn {
   -webkit-box-sizing: border-box;
