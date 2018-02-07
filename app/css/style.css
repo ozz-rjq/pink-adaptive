@@ -2461,7 +2461,8 @@ a.contacts__field:active {
 
 @media (min-width: 660px) {
   .panorama__title {
-    top: 57px; }
+    top: 57px;
+    right: 3%; }
   .panorama__content {
     width: 620px;
     padding-left: 28px;
@@ -2521,7 +2522,8 @@ a.contacts__field:active {
 
 @media (min-width: 1200px) {
   .panorama__title {
-    top: 54px; }
+    top: 54px;
+    right: 10%; }
   .panorama__content {
     width: 940px;
     padding-bottom: 23px; } }
