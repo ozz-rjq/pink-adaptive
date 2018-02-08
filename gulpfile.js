@@ -1,9 +1,12 @@
 var gulp         = require("gulp"),
     plumber      = require('gulp-plumber'),
+    pump         = require('pump'),
     sass         = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
-    minify       = require('gulp-csso');
-    rename       = require('gulp-rename');
+    htmlmin      = require('gulp-htmlmin')
+    minify       = require('gulp-csso'),
+    uglify       = require('gulp-uglify'),
+    rename       = require('gulp-rename'),
     imagemin     = require('gulp-imagemin'), 
     pngquant     = require('imagemin-pngquant'),
     server       = require("browser-sync"),
@@ -55,23 +58,33 @@ gulp.task("serve", function() {
 
 gulp.task("copy", function(){
 
-	var copyHtml = gulp.src("app/*.html")
-		.pipe(gulp.dest("dist"));
-
 	var copyCss = gulp.src("app/css/style.min.css")
 		.pipe(gulp.dest("dist/css"));
 
 	var copyFonts = gulp.src("app/fonts/**/*")
 		.pipe(gulp.dest("dist/fonts"));
 
-	var copyJs = gulp.src("app/js/**/*")
-		.pipe(gulp.dest("dist/js"));
+});
 
+gulp.task('minifyHTML', function() {
+  return gulp.src('app/*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('dist'));
+});
+
+gulp.task('compressJs', function (cb) {
+  pump([
+        gulp.src('app/js/*.js'),
+        uglify(),
+        gulp.dest('dist/js')
+    ],
+    cb
+  );
 });
 
 gulp.task("build", function(done) {
 
-	run("clean", "style", "img", "copy", done);
+	run("clean", "style", "img", "copy", "minifyHTML", "compressJs", done);
 
 });
 
