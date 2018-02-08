@@ -69,9 +69,9 @@ gulp.task("copy", function(){
 
 });
 
-gulp.task("build", function(fn) {
+gulp.task("build", function(done) {
 
-	run("clean", "style", "img", "copy", fn);
+	run("clean", "style", "img", "copy", done);
 
 });
 

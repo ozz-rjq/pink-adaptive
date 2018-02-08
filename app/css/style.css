@@ -1638,7 +1638,7 @@ label[for=reviews-slide-3] {
 
 .rates__wrapper {
   position: relative;
-  width: 320px;
+  width: 95%;
   margin: 0 auto;
   overflow: hidden; }
 
@@ -1647,18 +1647,24 @@ label[for=reviews-slide-3] {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 300%;
   margin-top: 133px;
   margin-bottom: 99px;
   -webkit-transform: translateX(-256px);
       -ms-transform: translateX(-256px);
           transform: translateX(-256px); }
 
+.rates__item {
+  width: 30%; }
+
 .rates__item--info {
   display: none; }
 
 .rates__header {
   position: relative;
-  width: 276px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
   padding-top: 17px;
   padding-bottom: 17px;
   text-align: center;
@@ -1811,9 +1817,9 @@ label[for=rates-slide-2] {
   border: 2px solid #283645; }
 
 .rates__radio--2:checked ~ .rates__list {
-  -webkit-transform: translateX(-256px);
-      -ms-transform: translateX(-256px);
-          transform: translateX(-256px);
+  -webkit-transform: translateX(-28.35%);
+      -ms-transform: translateX(-28.35%);
+          transform: translateX(-28.35%);
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   -o-transition: transform 0.5s;
@@ -1826,9 +1832,9 @@ label[for=rates-slide-3] {
   border: 2px solid #283645; }
 
 .rates__radio--3:checked ~ .rates__list {
-  -webkit-transform: translateX(-512px);
-      -ms-transform: translateX(-512px);
-          transform: translateX(-512px);
+  -webkit-transform: translateX(-56%);
+      -ms-transform: translateX(-56%);
+          transform: translateX(-56%);
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   -o-transition: transform 0.5s;
@@ -1859,14 +1865,14 @@ label[for=rates-slide-3] {
   .rates__item--info {
     display: block; }
     .rates__item--info .rates__header {
-      min-height: 62px;
+      min-height: 78px;
       background-color: transparent; }
     .rates__item--info .rates__parameters {
       border: 2px solid #e5e5e5; }
     .rates__item--info .rates__option {
       padding-left: 16px; }
   .rates__header {
-    width: 156px;
+    width: auto;
     padding-top: 10px;
     padding-bottom: 7px; }
   .rates__header--hit::after {
@@ -1935,7 +1941,7 @@ label[for=rates-slide-3] {
     margin-top: 186px;
     margin-bottom: 95px; }
   .rates__header {
-    width: 235px;
+    width: auto;
     padding-top: 17px;
     padding-bottom: 17px; }
   .rates__header--hit::after {
@@ -1956,6 +1962,8 @@ label[for=rates-slide-3] {
     font-size: 18px; }
   .rates__price {
     font-size: 24px; }
+  .rates__item--info .rates__header {
+    min-height: 95px; }
   .rates__item--info .rates__option {
     padding-left: 22px; }
   .rates__option {
