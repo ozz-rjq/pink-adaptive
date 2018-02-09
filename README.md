@@ -1,4 +1,4 @@
-# pink-adaptive
+# pink-adaptive (ie10+)
 
 The project was created using:
 * BEM (Block-Element-Modifier) methodology
